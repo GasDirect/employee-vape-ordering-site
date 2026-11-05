@@ -1,0 +1,44 @@
+const VERSION = 'employee-vape-order-v1-2026-11-03';
+const SHELL = [
+  './', './index.html', './assets/styles.css?v=2026-11-03-vape-v1', './assets/app.js?v=2026-11-03-vape-v1',
+  './data/config.json', './data/products.json', './manifest.webmanifest',
+  './assets/icons/icon-192.png', './assets/icons/icon-512.png'
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil(caches.open(VERSION).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith('employee-vape-order-') && k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim()));
+});
+
+self.addEventListener('fetch', event => {
+  if (event.request.method !== 'GET') return;
+  const url = new URL(event.request.url);
+  if (url.origin !== location.origin || !url.pathname.startsWith(new URL(self.registration.scope).pathname)) return;
+
+  const isProductImage = url.pathname.includes('/assets/products/');
+  const shouldRefresh = event.request.mode === 'navigate' ||
+    /\/(data\/[^/]+\.json|assets\/[^/]+\.(?:js|css)|index\.html)$/.test(url.pathname);
+
+  if (shouldRefresh) {
+    event.respondWith(
+      fetch(event.request, { cache: 'no-store' }).then(response => {
+        if (response.ok) caches.open(VERSION).then(cache => cache.put(event.request, response.clone()));
+        return response;
+      }).catch(() => caches.match(event.request).then(hit => hit || caches.match('./index.html')))
+    );
+    return;
+  }
+
+  if (isProductImage) {
+    event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request).then(response => {
+      if (response.ok) caches.open(VERSION).then(cache => cache.put(event.request, response.clone()));
+      return response;
+    })));
+    return;
+  }
+
+  event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request)));
+});
