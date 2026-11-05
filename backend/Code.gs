@@ -24,6 +24,35 @@ const MAX_INLINE_IMAGES = MAX_ITEMS;
 const MAX_INLINE_IMAGE_BYTES = 1500000; // 1.5 MB per image
 const MAX_INLINE_IMAGE_TOTAL_BYTES = 12000000; // 12 MB total
 
+/**
+ * Run this ONCE from the Apps Script editor before deploying the web app.
+ * It checks GitHub catalog access and MailApp permission/quota, without sending email.
+ * Inspect the Execution log for "BACKEND PREFLIGHT OK".
+ */
+function verifyBackendSetup() {
+  const map = loadCatalogMap();
+  const ids = Object.keys(map);
+  if (ids.length === 0) {
+    throw new Error('No products were loaded from the GasDirect vape catalog.');
+  }
+
+  const mailQuota = MailApp.getRemainingDailyQuota();
+  if (mailQuota < 1) {
+    throw new Error('Google reports no email recipients remaining today for this account.');
+  }
+
+  const status = {
+    ready: true,
+    emailRecipient: RECIPIENT,
+    catalogProducts: ids.length,
+    sampleProduct: map[ids[0]].productName,
+    remainingDailyRecipientQuota: mailQuota,
+    message: 'No email was sent. Deploy the web app next.'
+  };
+  console.log('BACKEND PREFLIGHT OK: ' + JSON.stringify(status));
+  return status;
+}
+
 function doGet() {
   return HtmlService.createHtmlOutput('Employee Vape Order backend is running.');
 }
