@@ -11,6 +11,7 @@
  */
 
 const RECIPIENT = 'lpgasbilling@gmail.com';
+const EMAIL_BACKEND_VERSION = 'png-email-v2-2026-11-05';
 const TIME_ZONE = 'America/New_York';
 const MAX_ITEMS = 150;
 const MAX_QTY = 999;
@@ -55,7 +56,8 @@ function verifyBackendSetup() {
 }
 
 function doGet() {
-  return HtmlService.createHtmlOutput('Employee Vape Order backend is running.');
+  // Health check, not an email test. Shows the deployed revision without sending an order.
+  return HtmlService.createHtmlOutput('Employee Vape Order backend is running. Version: ' + EMAIL_BACKEND_VERSION);
 }
 
 function doPost(e) {
