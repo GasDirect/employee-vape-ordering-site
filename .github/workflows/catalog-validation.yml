@@ -33,3 +33,9 @@ jobs:
 
       - name: Validate catalog
         run: python3 tools/validate_catalog.py
+
+      - name: Test website, email backend, and cache isolation
+        run: |
+          node tests/smoke_test.js
+          node tests/backend_smoke_test.js
+          node tests/sw_smoke_test.js
