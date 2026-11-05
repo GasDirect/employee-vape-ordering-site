@@ -77,8 +77,8 @@ h1 { font-size: clamp(26px, 7vw, 40px); line-height: 1.05; }
 
 .product-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 11px; display: grid; grid-template-columns: 92px minmax(0,1fr); gap: 12px; min-height: 136px; box-shadow: 0 5px 18px rgba(23,56,76,.045); position: relative; }
 .product-card.selected { border-color: #8bc8bb; box-shadow: 0 0 0 2px rgba(15,123,104,.09), 0 7px 22px rgba(23,56,76,.07); }
-.product-image-wrap { width: 92px; height: 92px; border-radius: 14px; background: #fafafa; border: 1px solid #eef0ef; display: grid; place-items: center; overflow: hidden; }
-.product-image { width: 100%; height: 100%; object-fit: contain; }
+.product-image-wrap { width: 92px; height: 92px; padding: 10px; box-sizing: border-box; border-radius: 14px; background: #ffffff; border: 1px solid #eef0ef; display: grid; place-items: center; overflow: hidden; }
+.product-image { width: 100%; height: 100%; object-fit: contain; object-position: center; }
 .product-placeholder { width: 100%; height: 100%; display: grid; place-items: center; text-align: center; padding: 8px; color: var(--muted); font-size: 11px; font-weight: 800; background: linear-gradient(135deg,#f8f8f6,#efefeb); }
 .product-main { min-width: 0; display: flex; flex-direction: column; }
 .product-brand { margin: 1px 0 3px; color: var(--brand); font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; }
@@ -140,7 +140,7 @@ h1 { font-size: clamp(26px, 7vw, 40px); line-height: 1.05; }
 .review-category { color: var(--ink-2); font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .06em; margin: 12px 0 7px; }
 .review-item { display: grid; grid-template-columns: 56px minmax(0,1fr); gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
 .review-item:first-of-type { border-top: 0; }
-.review-thumb { width: 56px; height: 56px; border-radius: 10px; border: 1px solid #eef0ef; object-fit: contain; background: #fafafa; }
+.review-thumb { width: 56px; height: 56px; padding: 6px; box-sizing: border-box; border-radius: 10px; border: 1px solid #eef0ef; object-fit: contain; object-position: center; background: #ffffff; }
 .review-thumb-placeholder { width: 56px; height: 56px; border-radius: 10px; display: grid; place-items: center; background: #f1f1ee; color: var(--muted); font-size: 9px; font-weight: 800; text-align: center; }
 .review-name { margin: 0; font-size: 14px; line-height: 1.2; font-weight: 800; }
 .review-meta { margin-top: 3px; color: var(--muted); font-size: 11px; }
