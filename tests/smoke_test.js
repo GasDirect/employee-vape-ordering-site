@@ -98,8 +98,16 @@ function placeholderCount(html) { return (html.match(/<div class="product-placeh
   el('employeeName').value = 'Test Staff';
   el('employeeName').emit('input');
   el('sendOrder').emit('click');
-  assert(el('submissionStatus').textContent.includes('not configured for this new site'));
-  assert.equal(el('submissionForm').submits || 0, 0); // no configured URL, no attempt to send
+  // A simulated form submit verifies the configured backend without a network request.
+  assert(el('submissionStatus').textContent.includes('Sending your order request'));
+  assert.equal(el('submissionForm').submits || 0, 1);
+  assert.equal(el('submissionForm').action, config.backend.appsScriptUrl);
+  const requestId = JSON.parse(el('submissionPayload').value).requestId;
+  site.registered['window.message']({data:{
+    source:'employee-vape-order-backend', requestId, ok:false,
+    message:'Simulated backend error: no email was sent'
+  }});
+  assert(el('submissionStatus').textContent.includes('no email was sent'));
   assert(![...local.keys()].some(k=>k.startsWith('storeOrder.')));
   assert([...local.keys()].some(k=>k.startsWith('employeeVapeOrder.')));
   const reload = await loadSite(originalCatalog, local);
@@ -108,7 +116,7 @@ function placeholderCount(html) { return (html.match(/<div class="product-placeh
   assert(reload.el('reviewGroups').innerHTML.includes('Ship two kits'));
   assert.equal(reload.el('storeSelect').value,'south-60');
   assert.equal(reload.el('employeeName').value,'Test Staff');
-  console.log('PASS: 182 Foger cards, 91 Kit photos, 91 Pod placeholders, search, cart, notes, request not sent, isolated browser storage.');
+  console.log('PASS: 182 Foger cards, 91 Kit photos, 91 Pod placeholders, search, cart, notes, configured form submission and simulated backend response, isolated browser storage.');
 
   const copy = JSON.parse(JSON.stringify(originalCatalog));
   for(const [key,name] of [['breeze','Breeze'], ['raz','RAZ'], ['geek-bar','Geek Bar'], ['future-new','Future New']]) {
