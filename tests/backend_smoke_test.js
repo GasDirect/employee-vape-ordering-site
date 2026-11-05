@@ -11,8 +11,8 @@ const products=JSON.parse(fs.readFileSync(path.join(root,'data/products.json'),'
 const emails=[];
 const cache=new Map();
 const scripts = {
-  console: {error() {},warn() {}},
-  MailApp: { sendEmail: message=>emails.push(message) },
+  console: {error() {},warn() {},log() {}},
+  MailApp: { sendEmail: message=>emails.push(message), getRemainingDailyQuota:()=>50 },
   HtmlService: {
     XFrameOptionsMode:{ALLOWALL:1},
     createHtmlOutput: html=>({html,setXFrameOptionsMode(){return this;}})
@@ -33,6 +33,12 @@ const scripts = {
 };
 vm.createContext(scripts);
 vm.runInContext(source,scripts,{filename:'backend/Code.gs'});
+const setup = scripts.verifyBackendSetup();
+assert.equal(setup.ready,true);
+assert.equal(setup.catalogProducts,182);
+assert.equal(setup.emailRecipient,'lpgasbilling@gmail.com');
+assert.equal(setup.remainingDailyRecipientQuota,50);
+assert.equal(emails.length,0);
 const base=()=>({version:1, requestId:'test-request-id', clientId:'test-client-id',
   startedAt:Date.now()-3000, submittedAt:new Date().toISOString(), submittedLocal:'Now',timeZone:'America/New_York',
   store:'South 60 Market',storeId:'south-60',employeeName:'Test Staff',generalNotes:'Please review',honeypot:'',
