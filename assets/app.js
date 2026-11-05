@@ -106,6 +106,7 @@
     });
     el.resetFilters.addEventListener('click', resetFilters);
     el.catalogContent.addEventListener('click', onCatalogClick);
+    el.catalogContent.addEventListener('load', onProductImageLoad, true);
     el.catalogContent.addEventListener('input', onCatalogInput);
     el.cartButton.addEventListener('click', openDrawer);
     el.closeDrawer.addEventListener('click', closeDrawer);
@@ -328,6 +329,19 @@
       renderCatalog();
       if (state.cart[id].noteOpen) requestAnimationFrame(() => document.querySelector(`[data-note-id="${CSS.escape(id)}"]`)?.focus());
     }
+  }
+
+  // Classify only the bundled Foger Kit assets; other brands keep a safe, unscaled fit.
+  // The CSS flex container prevents tall images from overflowing and being clipped.
+  function onProductImageLoad(event) {
+    const img = event.target;
+    if (!img || !img.classList || !img.classList.contains('product-image')) return;
+    const source = img.getAttribute('src') || '';
+    if (!source.includes('/assets/products/foger/kits/')) return;
+    if (!img.naturalWidth || !img.naturalHeight) return;
+    const aspectRatio = img.naturalWidth / img.naturalHeight;
+    if (aspectRatio > 1.3) img.classList.add('product-image--wide');
+    else if (aspectRatio >= 0.85 && aspectRatio <= 1.15) img.classList.add('product-image--square');
   }
 
   function onCatalogInput(event) {
