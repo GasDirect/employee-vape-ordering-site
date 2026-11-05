@@ -20,6 +20,7 @@ const RATE_LIMIT_PER_CLIENT = 12;
 
 const CATALOG_URL = 'https://raw.githubusercontent.com/GasDirect/employee-vape-ordering-site/main/data/products.json';
 const REPO_RAW_BASE = 'https://raw.githubusercontent.com/GasDirect/employee-vape-ordering-site/main/';
+const EMAIL_THUMBNAIL_BASE = REPO_RAW_BASE + 'assets/email-thumbnails/';
 const MAX_INLINE_IMAGES = MAX_ITEMS;
 const MAX_INLINE_IMAGE_BYTES = 1500000; // 1.5 MB per image
 const MAX_INLINE_IMAGE_TOTAL_BYTES = 12000000; // 12 MB total
@@ -197,7 +198,7 @@ function buildEmail(p, catalogMap) {
         const cid = imageData.cidById[id] || '';
 
         const imageCell = cid
-          ? '<img src="cid:' + esc(cid) + '" alt="' + esc(name) + '" width="68" height="68" style="display:block;width:68px;height:68px;object-fit:contain;border:1px solid #e1e6e3;border-radius:10px;background:#ffffff">'
+          ? '<img src="cid:' + esc(cid) + '" alt="' + esc(name) + '" width="68" height="68" style="display:block;width:68px;height:68px;border:1px solid #e1e6e3;border-radius:10px;background:#ffffff">'
           : '<div style="width:68px;height:68px;border:1px solid #e1e6e3;border-radius:10px;background:#f4f6f5;color:#98a5ad;font-size:10px;line-height:68px;text-align:center;white-space:nowrap">No image</div>';
 
         htmlSections.push(
@@ -261,7 +262,7 @@ function prepareInlineImages(items, catalogMap) {
     const product = catalogMap[id];
     if (!product || !product.image) return;
 
-    const url = catalogImageUrl(product.image);
+    const url = catalogEmailImageUrl(product.image);
     if (!url) return;
 
     candidates.push({ id: id, url: url });
@@ -373,6 +374,25 @@ function catalogImageUrl(imageValue) {
   const path = value.replace(/^\.?\//, '').replace(/^\/+/, '');
   if (!/^assets\/products\//.test(path)) return '';
   return REPO_RAW_BASE + encodeURI(path);
+}
+
+/**
+ * Email clients render transparent WebP images inconsistently. The GitHub
+ * thumbnail workflow creates opaque 192x192 PNGs from local source images.
+ * Keep the original catalog image and website display completely unchanged.
+ */
+function catalogEmailImageUrl(imageValue) {
+  const value = String(imageValue || '').trim();
+  if (!value) return '';
+  const path = value.replace(/^\.?\//, '').replace(/^\/+/, '');
+  if (/^assets\/products\//.test(path) &&
+      !path.includes('..') &&
+      /\.(?:webp|png|jpe?g)$/i.test(path)) {
+    const productPath = path.slice('assets/products/'.length);
+    return EMAIL_THUMBNAIL_BASE + encodeURI(productPath.replace(/\.[^.\/]+$/, '.png'));
+  }
+  // Catalog-driven external images for later brands still use their own URLs.
+  return catalogImageUrl(imageValue);
 }
 
 function normalizedImageContentType(contentType, url) {
