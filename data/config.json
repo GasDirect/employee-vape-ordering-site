@@ -23,7 +23,7 @@
   ],
   "backend": {
     "type": "google-apps-script",
-    "appsScriptUrl": "https://script.google.com/macros/s/AKfycby7sfCZ4-AQcQBPP1wGaj6E9IDgmAGPT0JEMevO9ep9Fuzz-B751lpdcrq7ScK2iJcl7A/exec",
+    "appsScriptUrl": "https://script.google.com/macros/s/AKfycbwxa6boL877sfkunaeVqae7qlKbl-7OUmuRu9n1jQ5Xopd01NHGybyCMN0hiRhj0WjYRQ/exec",
     "timeoutMs": 20000
   },
   "brands": [
