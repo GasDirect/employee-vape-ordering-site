@@ -75,10 +75,14 @@ h1 { font-size: clamp(26px, 7vw, 40px); line-height: 1.05; }
 .subcategory-label { margin: 14px 0 8px; color: var(--brand-dark); font-size: 13px; font-weight: 900; }
 .product-grid { display: grid; gap: 10px; }
 
-.product-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 11px; display: grid; grid-template-columns: 92px minmax(0,1fr); gap: 12px; min-height: 136px; box-shadow: 0 5px 18px rgba(23,56,76,.045); position: relative; }
+.product-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 11px; display: grid; grid-template-columns: 112px minmax(0,1fr); gap: 12px; min-height: 136px; box-shadow: 0 5px 18px rgba(23,56,76,.045); position: relative; }
 .product-card.selected { border-color: #8bc8bb; box-shadow: 0 0 0 2px rgba(15,123,104,.09), 0 7px 22px rgba(23,56,76,.07); }
-.product-image-wrap { width: 92px; height: 92px; padding: 10px; box-sizing: border-box; border-radius: 14px; background: #ffffff; border: 1px solid #eef0ef; display: grid; place-items: center; overflow: hidden; }
-.product-image { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+/* Photos include portraits, square renders and transparent wide kit sets. Keep the entire portrait visible. */
+.product-image-wrap { width: 112px; height: 112px; padding: 6px; border-radius: 14px; background: #ffffff; border: 1px solid #eef0ef; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.product-image { display: block; flex: none; width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; object-position: center; }
+/* The supplied Foger set photos have transparent margins baked into their 900x563 canvases. */
+.product-image--wide { transform: translateY(-7px) scale(1.35); }
+.product-image--square { transform: scale(1.12); }
 .product-placeholder { width: 100%; height: 100%; display: grid; place-items: center; text-align: center; padding: 8px; color: var(--muted); font-size: 11px; font-weight: 800; background: linear-gradient(135deg,#f8f8f6,#efefeb); }
 .product-main { min-width: 0; display: flex; flex-direction: column; }
 .product-brand { margin: 1px 0 3px; color: var(--brand); font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; }
