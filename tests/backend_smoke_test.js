@@ -25,10 +25,10 @@ const scripts = {
   },
   UrlFetchApp: {
     fetch:()=>({getResponseCode:()=>200,getContentText:()=>JSON.stringify(products)}),
-    fetchAll: reqs=>reqs.map(() => ({getResponseCode:()=>200, getBlob:()=>({
-      getBytes:()=>[1,2,3],getContentType:()=> 'image/webp',
+    fetchAll: reqs=>reqs.map(req => { assert(req.url.includes('/assets/email-thumbnails/foger/kits/')); assert(req.url.endsWith('.png')); return ({getResponseCode:()=>200, getBlob:()=>({
+      getBytes:()=>[1,2,3],getContentType:()=> 'image/png',
       setContentType(){return this;},setName(){return this;}
-    })}))
+    })})})
   },Date,JSON,Object,Array,Number,String,Math
 };
 vm.createContext(scripts);
@@ -57,6 +57,8 @@ assert(emails[0].body.includes('Cool Mint'));
 assert(!emails[0].body.includes('FAKE PRODUCT'));
 assert(!emails[0].body.includes('FAKE BRAND'));
 assert(emails[0].htmlBody.includes('src="cid:'));
+assert(!emails[0].htmlBody.includes('object-fit:contain'));
+assert(!emails[0].htmlBody.includes('height:auto'));
 assert(emails[0].htmlBody.includes('No image'));
 assert.equal(Object.keys(emails[0].inlineImages).length,1);
 const again=post(firstRequest);
