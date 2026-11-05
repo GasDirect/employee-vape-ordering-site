@@ -60,6 +60,19 @@ function placeholderCount(html) { return (html.match(/<div class="product-placeh
   assert.equal(el('resultCount').textContent,'182 products');
   assert.equal(cardCount(el('catalogContent').innerHTML),182);
   assert.equal(photoCount(el('catalogContent').innerHTML),91);
+  // Image fit: only the Foger Kit source formats with built-in whitespace get scaled.
+  function simulateImageLoad(path, width, height) {
+    const classes = new Set(['product-image']);
+    el('catalogContent').emit('load',{target:{
+      classList:{contains:name=>classes.has(name),add:name=>classes.add(name)},
+      getAttribute:()=>path,naturalWidth:width,naturalHeight:height
+    }});
+    return classes;
+  }
+  assert(!simulateImageLoad('./assets/products/foger/kits/cool-mint.webp',346,700).has('product-image--wide'));
+  assert(simulateImageLoad('./assets/products/foger/kits/blackberry-passion-refresher.webp',900,563).has('product-image--wide'));
+  assert(simulateImageLoad('./assets/products/foger/kits/strawberry-slush.webp',550,550).has('product-image--square'));
+  assert(!simulateImageLoad('./assets/products/breeze/example.webp',900,563).has('product-image--wide'));
   assert.equal(placeholderCount(el('catalogContent').innerHTML),91);
   assert(el('brandFilters').innerHTML.includes('data-brand="foger"'));
   assert(!el('brandFilters').innerHTML.includes('data-brand="breeze"'));
