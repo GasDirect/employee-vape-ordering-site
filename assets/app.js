@@ -15,6 +15,7 @@
     catalog: [],
     categories: [],
     brands: [],
+    flavorGroups: {},
     brand: 'all',
     search: '',
     category: 'all',
@@ -36,15 +37,19 @@
     restoreLocalState();
 
     try {
-      const [configResponse, productsResponse] = await Promise.all([
+      const [configResponse, productsResponse, flavorResponse] = await Promise.all([
         fetch('./data/config.json', { cache: 'no-store' }),
-        fetch('./data/products.json', { cache: 'no-store' })
+        fetch('./data/products.json', { cache: 'no-store' }),
+        fetch('./data/flavor-groups.json', { cache: 'no-store' }).catch(() => null)
       ]);
       if (!configResponse.ok || !productsResponse.ok) throw new Error('Catalog files could not be loaded.');
       state.config = await configResponse.json();
       const payload = await productsResponse.json();
       state.catalog = payload.products.filter(p => p.active !== false);
       state.categories = payload.categories || [];
+      state.flavorGroups = flavorResponse?.ok
+        ? ((await flavorResponse.json().catch(() => ({}))).brands || {})
+        : {};
       state.brands = catalogBrands(state.config.brands || [], state.catalog);
       hydrateConfig();
       renderAll();
@@ -59,7 +64,7 @@
   function cacheElements() {
     [
       'appTitle','appSubtitle','searchInput','clearSearch','brandFilters','categoryStrip','resultCount','filterSummary','resetFilters',
-      'catalogContent','cartButton','cartSummary','cartBadge','drawerBackdrop','orderDrawer','closeDrawer','storeSelect','customStoreField',
+      'stickyTools','catalogContent','cartButton','cartSummary','cartBadge','drawerBackdrop','orderDrawer','closeDrawer','storeSelect','customStoreField',
       'customStore','employeeName','generalNotes','websiteField','emptyOrder','reviewGroups','clearOrder','submissionStatus','sendHelp',
       'sendOrder','successModal','successMessage','newRequest','infoButton','infoModal','closeInfo','submissionFrame',
       'submissionForm','submissionPayload'
@@ -105,6 +110,8 @@
       }
     });
     el.resetFilters.addEventListener('click', resetFilters);
+    el.catalogContent.addEventListener('click', onFlavorShortcutClick);
+    el.catalogContent.addEventListener('change', onFlavorMenuChange);
     el.catalogContent.addEventListener('click', onCatalogClick);
     el.catalogContent.addEventListener('load', onProductImageLoad, true);
     el.catalogContent.addEventListener('input', onCatalogInput);
@@ -125,6 +132,8 @@
     el.infoModal.addEventListener('click', event => { if (event.target === el.infoModal) el.infoModal.hidden = true; });
     el.successModal.addEventListener('click', event => { if (event.target === el.successModal) startNewRequest(); });
     window.addEventListener('message', handleBackendMessage);
+    window.addEventListener('scroll', scheduleFlavorSpy, { passive: true });
+    window.addEventListener('resize', scheduleFlavorSpy, { passive: true });
     document.addEventListener('keydown', event => {
       if (event.key !== 'Escape') return;
       if (!el.infoModal.hidden) el.infoModal.hidden = true;
@@ -250,6 +259,7 @@
     const byCategory = groupBy(products, p => p.category);
     const categories = state.categories.filter(category => byCategory[category]);
     el.catalogContent.innerHTML = categories.map(category => renderCategory(category, byCategory[category])).join('');
+    scheduleFlavorSpy();
   }
 
   function renderCategory(category, products) {
@@ -260,13 +270,147 @@
       const subOrder = [...new Set(brandProducts.map(p => p.subcategory || ''))];
       const showBrand = state.brand === 'all';
       return `${showBrand ? `<div class="retailer-label">${escapeHtml(brand.name)}</div>` : ''}
-        ${subOrder.map(sub => `${sub ? `<div class="subcategory-label">${escapeHtml(sub)}</div>` : ''}<div class="product-grid">${bySub[sub].map(renderProductCard).join('')}</div>`).join('')}`;
+        ${subOrder.map(sub => renderFlavorCollection(category, brand, sub, bySub[sub])).join('')}`;
     }).join('');
-
+  
     return `<section class="category-section" id="${categoryId(category)}">
       <div class="category-heading"><h2>${escapeHtml(category)}</h2><span class="category-count">${products.length}</span></div>
       ${brandBlocks}
     </section>`;
+  }
+
+  function collectionGroups(brandKey, products) {
+    const definitions = state.flavorGroups[brandKey];
+    if (!Array.isArray(definitions) || !definitions.length) return null;
+    const byFlavor = new Map();
+    products.forEach(product => {
+      const key = normalize(product.variety);
+      if (!byFlavor.has(key)) byFlavor.set(key, []);
+      byFlavor.get(key).push(product);
+    });
+    const usedIds = new Set();
+    const groups = definitions.map(def => {
+      const items = [];
+      (def.flavors || []).forEach(flavor => {
+        (byFlavor.get(normalize(flavor)) || [])
+          .slice().sort((a, b) => a.displayOrder - b.displayOrder)
+          .forEach(product => {
+            if (!usedIds.has(product.id)) { items.push(product); usedIds.add(product.id); }
+          });
+      });
+      return { id: slug(def.id), title: def.title, shortLabel: def.shortLabel || def.title, items };
+    }).filter(group => group.items.length);
+    const other = products.filter(product => !usedIds.has(product.id)).sort((a, b) => a.displayOrder - b.displayOrder);
+    if (other.length) groups.push({ id: 'other-flavors', title: 'Other flavors', shortLabel: 'Other', items: other });
+    return groups;
+  }
+
+  function renderFlavorCollection(category, brand, sub, products) {
+    // Ordinary text search keeps the same ungrouped results layout.
+    const groups = state.search ? null : collectionGroups(brand.key, products);
+    const label = sub ? `<div class="subcategory-label">${escapeHtml(sub)}</div>` : '';
+    if (!groups || !groups.length) {
+      return `${label}<div class="product-grid">${products.map(renderProductCard).join('')}</div>`;
+    }
+    const id = `flavors-${slug(category)}-${slug(brand.key)}-${slug(sub || 'all')}`;
+    const description = `${brand.name} ${category}${sub ? ' ' + sub : ''}`;
+    const allButton = `<button class="flavor-chip active" type="button" data-collection-id="${id}" data-flavor-jump="all" aria-current="location">All</button>`;
+    const groupButtons = groups.map(group => `<button class="flavor-chip" type="button" data-collection-id="${id}" data-flavor-jump="${escapeAttr(group.id)}" aria-current="false" title="${escapeAttr(group.title)}">${escapeHtml(group.shortLabel)}</button>`).join('');
+    const options = groups.map(group => `<option value="${escapeAttr(group.id)}">${escapeHtml(group.title)}</option>`).join('');
+    return `<div class="flavor-collection" id="${id}" data-flavor-collection="${id}">
+      <div class="flavor-collection-top" id="${id}-top">${label}</div>
+      <nav class="flavor-nav" data-flavor-nav="${id}" aria-label="Flavor shortcuts for ${escapeAttr(description)}">
+        <div class="flavor-nav-inner">
+          <div class="flavor-tabs" data-flavor-tabs="${id}" aria-label="Flavor families">${allButton}${groupButtons}</div>
+          <label class="flavor-menu"><span class="sr-only">Jump to ${escapeHtml(description)} flavor family</span>
+            <select data-flavor-select="${id}" aria-label="Jump to a flavor family"><option value="all">Jump to…</option>${options}</select>
+          </label>
+        </div>
+      </nav>
+      <div class="flavor-sections">${groups.map(group => `<section class="flavor-section" id="${id}-${group.id}" data-flavor-section="${group.id}" data-flavor-collection-id="${id}">
+        <div class="flavor-section-heading"><h3>${escapeHtml(group.title)}</h3><span>${group.items.length}</span></div>
+        <div class="product-grid">${group.items.map(renderProductCard).join('')}</div>
+      </section>`).join('')}</div>
+    </div>`;
+  }
+
+  function slug(value) {
+    return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'all';
+  }
+
+  function onFlavorShortcutClick(event) {
+    const button = event.target.closest('[data-flavor-jump]');
+    if (!button) return;
+    jumpToFlavor(button.dataset.collectionId, button.dataset.flavorJump);
+  }
+
+  function onFlavorMenuChange(event) {
+    const select = event.target;
+    if (!select.dataset?.flavorSelect) return;
+    jumpToFlavor(select.dataset.flavorSelect, select.value);
+  }
+
+  function jumpToFlavor(collectionId, groupId) {
+    const collection = document.getElementById(collectionId);
+    if (!collection) return;
+    const target = document.getElementById(groupId === 'all' ? collectionId + '-top' : collectionId + '-' + groupId);
+    if (!target) return;
+    const nav = collection.querySelector('.flavor-nav');
+    if (nav) activateFlavorTab(nav, groupId);
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+  }
+
+  function activateFlavorTab(nav, groupId) {
+    const tabs = [...nav.querySelectorAll('[data-flavor-jump]')];
+    const active = tabs.find(button => button.dataset.flavorJump === groupId);
+    if (!active || active.getAttribute('aria-current') === 'location') return;
+    tabs.forEach(button => {
+      const selected = button === active;
+      button.classList.toggle('active', selected);
+      button.setAttribute('aria-current', selected ? 'location' : 'false');
+    });
+    const menu = nav.querySelector('[data-flavor-select]');
+    if (menu) menu.value = groupId;
+    const scroller = nav.querySelector('.flavor-tabs');
+    if (scroller && scroller.scrollTo) {
+      const tabRect = active.getBoundingClientRect();
+      const viewport = scroller.getBoundingClientRect();
+      const leftGap = tabRect.left - viewport.left;
+      const rightGap = tabRect.right - viewport.right;
+      if (leftGap < 0 || rightGap > 0) {
+        scroller.scrollTo({left: Math.max(0, scroller.scrollLeft + (leftGap < 0 ? leftGap - 12 : rightGap + 12)), behavior:'auto'});
+      }
+    }
+  }
+
+  function scheduleFlavorSpy() {
+    if (flavorSpyQueued) return;
+    flavorSpyQueued = true;
+    requestAnimationFrame(() => {
+      flavorSpyQueued = false;
+      updateFlavorSpy();
+    });
+  }
+
+  function updateFlavorSpy() {
+    const stickyHeight = el.stickyTools?.getBoundingClientRect().height || 0;
+    document.documentElement.style.setProperty('--sticky-tools-height', `${Math.ceil(stickyHeight)}px`);
+    if (state.search) return;
+    el.catalogContent.querySelectorAll('.flavor-collection').forEach(collection => {
+      const nav = collection.querySelector('.flavor-nav');
+      if (!nav) return;
+      const navHeight = nav.getBoundingClientRect().height;
+      collection.style.setProperty('--flavor-nav-height', `${Math.ceil(navHeight)}px`);
+      const threshold = stickyHeight + navHeight + 18;
+      const rect = collection.getBoundingClientRect();
+      if (rect.bottom <= threshold || rect.top >= window.innerHeight) return;
+      let active = 'all';
+      collection.querySelectorAll('[data-flavor-section]').forEach(section => {
+        if (section.getBoundingClientRect().top <= threshold + 4) active = section.dataset.flavorSection;
+      });
+      activateFlavorTab(nav, active);
+    });
   }
 
   function renderProductCard(product) {
