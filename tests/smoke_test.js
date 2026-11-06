@@ -59,7 +59,7 @@ function placeholderCount(html) { return (html.match(/<div class="product-placeh
   const { el, local } = site;
   assert.equal(el('resultCount').textContent,'182 products');
   assert.equal(cardCount(el('catalogContent').innerHTML),182);
-  assert.equal(photoCount(el('catalogContent').innerHTML),91);
+  assert.equal(photoCount(el('catalogContent').innerHTML),182);
   // Image fit: only the Foger Kit source formats with built-in whitespace get scaled.
   function simulateImageLoad(path, width, height) {
     const classes = new Set(['product-image']);
@@ -73,7 +73,7 @@ function placeholderCount(html) { return (html.match(/<div class="product-placeh
   assert(simulateImageLoad('./assets/products/foger/kits/blackberry-passion-refresher.webp',900,563).has('product-image--wide'));
   assert(simulateImageLoad('./assets/products/foger/kits/strawberry-slush.webp',550,550).has('product-image--square'));
   assert(!simulateImageLoad('./assets/products/breeze/example.webp',900,563).has('product-image--wide'));
-  assert.equal(placeholderCount(el('catalogContent').innerHTML),91);
+  assert.equal(placeholderCount(el('catalogContent').innerHTML),0);
   assert(el('brandFilters').innerHTML.includes('data-brand="foger"'));
   assert(!el('brandFilters').innerHTML.includes('data-brand="breeze"'));
   assert(!el('catalogContent').innerHTML.includes('Price not listed'));
@@ -116,7 +116,7 @@ function placeholderCount(html) { return (html.match(/<div class="product-placeh
   assert(reload.el('reviewGroups').innerHTML.includes('Ship two kits'));
   assert.equal(reload.el('storeSelect').value,'south-60');
   assert.equal(reload.el('employeeName').value,'Test Staff');
-  console.log('PASS: 182 Foger cards, 91 Kit photos, 91 Pod placeholders, search, cart, notes, configured form submission and simulated backend response, isolated browser storage.');
+  console.log('PASS: 182 Foger cards, 182 Kit and Pod photos, search, cart, notes, configured form submission and simulated backend response, isolated browser storage.');
 
   const copy = JSON.parse(JSON.stringify(originalCatalog));
   for(const [key,name] of [['breeze','Breeze'], ['raz','RAZ'], ['geek-bar','Geek Bar'], ['future-new','Future New']]) {

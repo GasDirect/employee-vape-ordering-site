@@ -34,6 +34,9 @@ jobs:
       - name: Validate catalog
         run: python3 tools/validate_catalog.py
 
+      - name: Verify 182 Foger images and Kit/Pod mappings
+        run: python3 tools/verify_foger_images.py
+
       - name: Test website, email backend, and cache isolation
         run: |
           node tests/smoke_test.js
