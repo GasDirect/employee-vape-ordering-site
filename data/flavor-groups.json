@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "description": "Curated group sequence and source-catalog relative flavor order. Add future brands under brands without changing renderer.",
+  "brands": {
+    "foger": [
+      {
+        "id": "mints-fresh",
+        "title": "Mints & Fresh",
+        "shortLabel": "Mints",
+        "flavors": [
+          "Cool Mint",
+          "Gum Mint",
+          "Miami Mint",
+          "Icy Mint"
+        ]
+      },
+      {
+        "id": "ice-frozen",
+        "title": "Ice & Frozen",
+        "shortLabel": "Ice & Frozen",
+        "flavors": [
+          "Watermelon Ice",
+          "Sour Apple Ice",
+          "Blue Razz Ice",
+          "Juicy Peach Ice",
+          "Strawberry Ice",
+          "Frozen Watermelon",
+          "Frozen Blueberry",
+          "Frozen Banana",
+          "Frozen Lemon",
+          "Frozen Blackberry",
+          "Frozen Pineapple",
+          "Frozen Strawberry Grapefruit",
+          "Frozen Summer Pear",
+          "Frozen Wildberry Mix",
+          "Frozen Orange & Green"
+        ]
+      },
+      {
+        "id": "classic-neutral",
+        "title": "Classic & Neutral",
+        "shortLabel": "Classic",
+        "flavors": [
+          "Coffee",
+          "Tobacco",
+          "Clear"
+        ]
+      },
+      {
+        "id": "strawberry-fruit",
+        "title": "Strawberry Fruit",
+        "shortLabel": "Strawberry",
+        "flavors": [
+          "Strawberry Kiwi",
+          "Strawberry Watermelon",
+          "Strawberry Banana",
+          "Strawberry Mango"
+        ]
+      },
+      {
+        "id": "berries-melons",
+        "title": "Berries & Melons",
+        "shortLabel": "Berries",
+        "flavors": [
+          "Blueberry Watermelon",
+          "Dragon Melon",
+          "California Cherry",
+          "Berry Bliss",
+          "Blackberry Blueberry",
+          "Raspberry Watermelon"
+        ]
+      },
+      {
+        "id": "tropical-citrus",
+        "title": "Tropical & Citrus",
+        "shortLabel": "Tropical",
+        "flavors": [
+          "Kiwi Dragon Berry",
+          "Pineapple Coconut",
+          "Mexico Mango",
+          "Lime Berry Orange",
+          "Baja Splash"
+        ]
+      },
+      {
+        "id": "lemonade-refreshers",
+        "title": "Lemonade & Refreshers",
+        "shortLabel": "Lemonade",
+        "flavors": [
+          "Dragon Fruit Lemonade",
+          "Pink Lemonade",
+          "Blackberry Passion Refresher",
+          "Orange Dream Refresher",
+          "Mango Pineapple Refresher",
+          "Peach Berries Refresher",
+          "Red Mix Refresher",
+          "Mint Lemonade"
+        ]
+      },
+      {
+        "id": "slush",
+        "title": "Slush",
+        "shortLabel": "Slush",
+        "flavors": [
+          "Orange Slush",
+          "Grape Slush",
+          "Cola Slush",
+          "Peach Slush",
+          "Strawberry Slush",
+          "Cherry Slush"
+        ]
+      },
+      {
+        "id": "punch-bold",
+        "title": "Punch & Bold Blends",
+        "shortLabel": "Punch",
+        "flavors": [
+          "Meta Moon",
+          "Pink & Blue",
+          "Cherry Bomb",
+          "Hawaiian Punch",
+          "Triple Berry Punch",
+          "Purple Passion Punch",
+          "Blue Dragon"
+        ]
+      },
+      {
+        "id": "desserts-creams",
+        "title": "Desserts & Creams",
+        "shortLabel": "Desserts",
+        "flavors": [
+          "Strawberry Cupcake",
+          "Vanilla Cupcake",
+          "Chocolate Cupcake",
+          "Skittles Cupcake",
+          "Coconut Cupcake",
+          "Red Velvet Cupcake",
+          "Strawnana Ice Cream",
+          "Vanilla Ice Cream"
+        ]
+      },
+      {
+        "id": "gummy-cotton-candy",
+        "title": "Gummy & Cotton Candy",
+        "shortLabel": "Gummy",
+        "flavors": [
+          "Gummy Bear",
+          "White Gummy",
+          "Watermelon Cotton Candy",
+          "Blueberry Cotton Candy",
+          "Strawberry Cotton Candy"
+        ]
+      },
+      {
+        "id": "bubblegum-bpop-hubba",
+        "title": "Bubblegum, B-Pop & Hubba",
+        "shortLabel": "Bubblegum",
+        "flavors": [
+          "Watermelon Bubble Gum",
+          "OMG B-Pop",
+          "Strawberry B-Pop",
+          "Blue Rancher B-Pop",
+          "Tropical Hubba",
+          "Strawberry Watermelon Hubba",
+          "Lemon Hubba"
+        ]
+      },
+      {
+        "id": "sweet-candy-savers",
+        "title": "Sweet Candy & Savers",
+        "shortLabel": "Candy",
+        "flavors": [
+          "Lemon Heads",
+          "Pineapple Savers",
+          "Wildberry Savers",
+          "Strawberry Savers"
+        ]
+      },
+      {
+        "id": "sour-gush-extreme",
+        "title": "Sour, Gush & Extreme",
+        "shortLabel": "Sour",
+        "flavors": [
+          "Sour Fcuking Fab",
+          "Sour Cranapple",
+          "Sour Gush",
+          "Sour Blue Dust",
+          "Sour Raspberry Punch",
+          "Blue Sour Raspberry",
+          "Sour Punch",
+          "Drop Sour Savers",
+          "Sour Cherry Savers"
+        ]
+      }
+    ]
+  }
+}
