@@ -1,0 +1,2191 @@
+{
+  "source": "Vape_Ordering_AI_Complete_Foger_Handoff(1).zip",
+  "asOf": "2026-11-05",
+  "format": "Foger Kit/Pod image integrity audit",
+  "products": [
+    {
+      "id": "foger-kit-001",
+      "type": "Kits",
+      "flavor": "Cool Mint",
+      "name": "Foger Kit Cool Mint",
+      "image": "assets/products/foger/kits/cool-mint.webp",
+      "sha256": "8c5761e9f444b083e9a4192e91b2011fc54f9bad90d48493acd8604a1185c84f",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-001",
+      "type": "Replacement Pods",
+      "flavor": "Cool Mint",
+      "name": "Foger Pod Cool Mint",
+      "image": "assets/products/foger/pods/cool-mint.webp",
+      "sha256": "1b2bd8185014e54f940ab6faf63686cb84f12e3a877023b389afee375d0782fd",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-002",
+      "type": "Kits",
+      "flavor": "Watermelon Ice",
+      "name": "Foger Kit Watermelon Ice",
+      "image": "assets/products/foger/kits/watermelon-ice.webp",
+      "sha256": "d04acb8915f8464e694d4e9a0d1d9a03b8af31e8b82247ef4e9bf8c238961bf0",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-002",
+      "type": "Replacement Pods",
+      "flavor": "Watermelon Ice",
+      "name": "Foger Pod Watermelon Ice",
+      "image": "assets/products/foger/pods/watermelon-ice.webp",
+      "sha256": "4dbb1aa058da03c9b45ae67defc8e58c341efa8e1ccef5bec488315121a5a0ac",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-003",
+      "type": "Kits",
+      "flavor": "Strawberry Kiwi",
+      "name": "Foger Kit Strawberry Kiwi",
+      "image": "assets/products/foger/kits/strawberry-kiwi.webp",
+      "sha256": "e8da18583ff79e1a30993efcf9837c927ebb10f22d82bfbf1ae47900560e8517",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-003",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry Kiwi",
+      "name": "Foger Pod Strawberry Kiwi",
+      "image": "assets/products/foger/pods/strawberry-kiwi.webp",
+      "sha256": "7a9201ccbc08ed9d919bc358208cfce05a8ad2831f0c58a255b7c71185d56f18",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-004",
+      "type": "Kits",
+      "flavor": "Sour Apple Ice",
+      "name": "Foger Kit Sour Apple Ice",
+      "image": "assets/products/foger/kits/sour-apple-ice.webp",
+      "sha256": "1679f2fe5a7773cf16f4efb1a536f284ec2fe653f9f282f4bb1743114599750c",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-004",
+      "type": "Replacement Pods",
+      "flavor": "Sour Apple Ice",
+      "name": "Foger Pod Sour Apple Ice",
+      "image": "assets/products/foger/pods/sour-apple-ice.webp",
+      "sha256": "d0969271f252ce75c687c4b67b5b5cedb4f092cd5c0d3851a5754c8cad0125bb",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-005",
+      "type": "Kits",
+      "flavor": "Blue Razz Ice",
+      "name": "Foger Kit Blue Razz Ice",
+      "image": "assets/products/foger/kits/blue-razz-ice.webp",
+      "sha256": "5764b2eb5c53a3fa8fb0873ecf48835680ca5d70f9629d49ab791649395c050e",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-005",
+      "type": "Replacement Pods",
+      "flavor": "Blue Razz Ice",
+      "name": "Foger Pod Blue Razz Ice",
+      "image": "assets/products/foger/pods/blue-razz-ice.webp",
+      "sha256": "d2e560b6656ec90029a08a03f769ab2e51bae7698ba030dafedf3742a760d3f3",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-006",
+      "type": "Kits",
+      "flavor": "Strawberry Watermelon",
+      "name": "Foger Kit Strawberry Watermelon",
+      "image": "assets/products/foger/kits/strawberry-watermelon.webp",
+      "sha256": "27bb209deac307c759e67c422d5c11d500b0c426b858c958db2a7f9d3e3a0228",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-006",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry Watermelon",
+      "name": "Foger Pod Strawberry Watermelon",
+      "image": "assets/products/foger/pods/strawberry-watermelon.webp",
+      "sha256": "26f27ef3c569699c649bca3b8551cdf805bf8ee00f1f5eb473fc92b472814bd0",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-007",
+      "type": "Kits",
+      "flavor": "Gummy Bear",
+      "name": "Foger Kit Gummy Bear",
+      "image": "assets/products/foger/kits/gummy-bear.webp",
+      "sha256": "af9e347e766b1beae60d19fb9e0b16d041e5dce821f8201d7a0074d27e588b46",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-007",
+      "type": "Replacement Pods",
+      "flavor": "Gummy Bear",
+      "name": "Foger Pod Gummy Bear",
+      "image": "assets/products/foger/pods/gummy-bear.webp",
+      "sha256": "4cf003d1f271c142f57a674fd2dd52cff86302ef1b1909717083c9fdc99cf92e",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-008",
+      "type": "Kits",
+      "flavor": "Juicy Peach Ice",
+      "name": "Foger Kit Juicy Peach Ice",
+      "image": "assets/products/foger/kits/juicy-peach-ice.webp",
+      "sha256": "4bc075ba23a7b09f888270c828648b098b499522bf87262ae33a94382ea085da",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-008",
+      "type": "Replacement Pods",
+      "flavor": "Juicy Peach Ice",
+      "name": "Foger Pod Juicy Peach Ice",
+      "image": "assets/products/foger/pods/juicy-peach-ice.webp",
+      "sha256": "586b9bc904931dc208100a44ecf8c8ad741632b8b2345e7c63d66b5077f0697c",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-009",
+      "type": "Kits",
+      "flavor": "Gum Mint",
+      "name": "Foger Kit Gum Mint",
+      "image": "assets/products/foger/kits/gum-mint.webp",
+      "sha256": "b286d976bfc43cb52255d348b724e83f4b639f558548f83850cd573dc6ee436d",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-009",
+      "type": "Replacement Pods",
+      "flavor": "Gum Mint",
+      "name": "Foger Pod Gum Mint",
+      "image": "assets/products/foger/pods/gum-mint.webp",
+      "sha256": "2e77326884d98b6439a20685180e713462d84f94992d18190879b72ebcd97be3",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-010",
+      "type": "Kits",
+      "flavor": "Kiwi Dragon Berry",
+      "name": "Foger Kit Kiwi Dragon Berry",
+      "image": "assets/products/foger/kits/kiwi-dragon-berry.webp",
+      "sha256": "8061e96890c7e6cc94c86f34dee4314c11ca8d86d6c0792d798c69c0afabe6fb",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-010",
+      "type": "Replacement Pods",
+      "flavor": "Kiwi Dragon Berry",
+      "name": "Foger Pod Kiwi Dragon Berry",
+      "image": "assets/products/foger/pods/kiwi-dragon-berry.webp",
+      "sha256": "2cdf326c1c788a37fecbdd47a53da12b6817c44bb973ac8598fe9e33bc32fd51",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-011",
+      "type": "Kits",
+      "flavor": "Strawberry Banana",
+      "name": "Foger Kit Strawberry Banana",
+      "image": "assets/products/foger/kits/strawberry-banana.webp",
+      "sha256": "f47c2599be4ed71c4d25e358397ff6fa0975b99b69fba31dbfc3baeda176e1b1",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-011",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry Banana",
+      "name": "Foger Pod Strawberry Banana",
+      "image": "assets/products/foger/pods/strawberry-banana.webp",
+      "sha256": "f72e772d91896618b57f2dca5808381e27f512e0836d99b21a2761244da6993f",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-012",
+      "type": "Kits",
+      "flavor": "Pineapple Coconut",
+      "name": "Foger Kit Pineapple Coconut",
+      "image": "assets/products/foger/kits/pineapple-coconut.webp",
+      "sha256": "92e35a2f6956c678d066802d780de76f5f52ea5cfa2d22117ff3d0d326656be8",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-012",
+      "type": "Replacement Pods",
+      "flavor": "Pineapple Coconut",
+      "name": "Foger Pod Pineapple Coconut",
+      "image": "assets/products/foger/pods/pineapple-coconut.webp",
+      "sha256": "26b0f7dfa5e75ee9c9ee56081fae7b000753a5c90c24b645ad91babc9e4adaf9",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-013",
+      "type": "Kits",
+      "flavor": "Blueberry Watermelon",
+      "name": "Foger Kit Blueberry Watermelon",
+      "image": "assets/products/foger/kits/blueberry-watermelon.webp",
+      "sha256": "1f6bc8681d4237be26a1ab85a5104135ef3ff20514919701997a348f667f41f9",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-013",
+      "type": "Replacement Pods",
+      "flavor": "Blueberry Watermelon",
+      "name": "Foger Pod Blueberry Watermelon",
+      "image": "assets/products/foger/pods/blueberry-watermelon.webp",
+      "sha256": "d8590b0adf17fee0a1c60a3479f852edafd05bf67cb7d8953944812501c59a0f",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-014",
+      "type": "Kits",
+      "flavor": "Strawberry Ice",
+      "name": "Foger Kit Strawberry Ice",
+      "image": "assets/products/foger/kits/strawberry-ice.webp",
+      "sha256": "6c333ac8e1ba52ebdc4ef0a141ad9f655b48413ed7e0c67595e18309c048abd2",
+      "dimensions": [
+        346,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-014",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry Ice",
+      "name": "Foger Pod Strawberry Ice",
+      "image": "assets/products/foger/pods/strawberry-ice.webp",
+      "sha256": "082f227a1c5628dd64d3b1dab5c89eebc34dcd23f81aecdc1690276cdab823c0",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-015",
+      "type": "Kits",
+      "flavor": "Coffee",
+      "name": "Foger Kit Coffee",
+      "image": "assets/products/foger/kits/coffee.webp",
+      "sha256": "8c7bcbb4d12a85a24e078e2a486544613e4b80b9705fa1dcfe7c836cb716c5ab",
+      "dimensions": [
+        347,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-015",
+      "type": "Replacement Pods",
+      "flavor": "Coffee",
+      "name": "Foger Pod Coffee",
+      "image": "assets/products/foger/pods/coffee.webp",
+      "sha256": "0708ae4bc135ed462a67bc6e1dbd18d1eaf079cf9f3050c17f04407a31bac7bc",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-016",
+      "type": "Kits",
+      "flavor": "Miami Mint",
+      "name": "Foger Kit Miami Mint",
+      "image": "assets/products/foger/kits/miami-mint.webp",
+      "sha256": "3150356f4182801b2d08786762bcd8034fd5bae1ad35d6789c91952077ad8d3c",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-pod-016",
+      "type": "Replacement Pods",
+      "flavor": "Miami Mint",
+      "name": "Foger Pod Miami Mint",
+      "image": "assets/products/foger/pods/miami-mint.webp",
+      "sha256": "541ecef3626cee27492ca85e3253479a1f3df387c1369af16aef42355bc2bf3b",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-017",
+      "type": "Kits",
+      "flavor": "Mexico Mango",
+      "name": "Foger Kit Mexico Mango",
+      "image": "assets/products/foger/kits/mexico-mango.webp",
+      "sha256": "baa8c528e45d14145d268162cc96bd2a3bce6db67d913c8b0134446975d32ad0",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-pod-017",
+      "type": "Replacement Pods",
+      "flavor": "Mexico Mango",
+      "name": "Foger Pod Mexico Mango",
+      "image": "assets/products/foger/pods/mexico-mango.webp",
+      "sha256": "c48a993af8c212da0fa6f9cf62be326e826f6309b6a73e1cec023d21624a262f",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-018",
+      "type": "Kits",
+      "flavor": "Tobacco",
+      "name": "Foger Kit Tobacco",
+      "image": "assets/products/foger/kits/tobacco.webp",
+      "sha256": "f9a5a0a665af151a51d4c7d51299663c07a084c7a659393d8d70dc0d8a13aa3f",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-018",
+      "type": "Replacement Pods",
+      "flavor": "Tobacco",
+      "name": "Foger Pod Tobacco",
+      "image": "assets/products/foger/pods/tobacco.webp",
+      "sha256": "ca4d7b8b99043db32a04e443fe8fd7cb4fd56ad5c4533a5b15a093913ca21228",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-019",
+      "type": "Kits",
+      "flavor": "Clear",
+      "name": "Foger Kit Clear",
+      "image": "assets/products/foger/kits/clear.webp",
+      "sha256": "029c2677914f1ebe320477caaccfa538486024bfd0756b127bb3596a6055aa9a",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-019",
+      "type": "Replacement Pods",
+      "flavor": "Clear",
+      "name": "Foger Pod Clear",
+      "image": "assets/products/foger/pods/clear.webp",
+      "sha256": "661d7cfab46f7e07f7effe99bf83b04552fc3ad6f0291361883c56ab32957e27",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-020",
+      "type": "Kits",
+      "flavor": "Icy Mint",
+      "name": "Foger Kit Icy Mint",
+      "image": "assets/products/foger/kits/icy-mint.webp",
+      "sha256": "527caec57cb32d20ca6eae2d051e01cd52cfbd249e397d69fbe867a7403f5eff",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-020",
+      "type": "Replacement Pods",
+      "flavor": "Icy Mint",
+      "name": "Foger Pod Icy Mint",
+      "image": "assets/products/foger/pods/icy-mint.webp",
+      "sha256": "81e2408fef813bb94db5efc1cf0275bc3a45dd7f978bc4ad08b2e18c7b730056",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-021",
+      "type": "Kits",
+      "flavor": "Watermelon Bubble Gum",
+      "name": "Foger Kit Watermelon Bubble Gum",
+      "image": "assets/products/foger/kits/watermelon-bubble-gum.webp",
+      "sha256": "7d2796fec87c6511584559e23df9ef1cb699f51a61f8a2f2af79e1a15fb95b5b",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-021",
+      "type": "Replacement Pods",
+      "flavor": "Watermelon Bubble Gum",
+      "name": "Foger Pod Watermelon Bubble Gum",
+      "image": "assets/products/foger/pods/watermelon-bubble-gum.webp",
+      "sha256": "3d2b9e827e342f96ac2075a11f3a897964243d9bee4ca62200a8c75ce9359884",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-022",
+      "type": "Kits",
+      "flavor": "White Gummy",
+      "name": "Foger Kit White Gummy",
+      "image": "assets/products/foger/kits/white-gummy.webp",
+      "sha256": "561b4a9180b55341ae109078eb23c217c1a92f999da73aca6c81d806a0811723",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-022",
+      "type": "Replacement Pods",
+      "flavor": "White Gummy",
+      "name": "Foger Pod White Gummy",
+      "image": "assets/products/foger/pods/white-gummy.webp",
+      "sha256": "417017125b4448f1db4b8d11af70e10bbe21301f0e0e0ab6fd83c78b1d035a86",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-023",
+      "type": "Kits",
+      "flavor": "Strawberry Cupcake",
+      "name": "Foger Kit Strawberry Cupcake",
+      "image": "assets/products/foger/kits/strawberry-cupcake.webp",
+      "sha256": "68607ce30740adaaa031ef2c82624500ff3bb7717899e09a9b013bf9f92b2976",
+      "dimensions": [
+        347,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-023",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry Cupcake",
+      "name": "Foger Pod Strawberry Cupcake",
+      "image": "assets/products/foger/pods/strawberry-cupcake.webp",
+      "sha256": "c5734b9b41e6de0c703b8626269858e7287970353c6e72975bc84cbb515920e1",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-024",
+      "type": "Kits",
+      "flavor": "OMG B-Pop",
+      "name": "Foger Kit OMG B-Pop",
+      "image": "assets/products/foger/kits/omg-b-pop.webp",
+      "sha256": "250e43f991d34333c459947e7ee59db8d27ea1004b053732f0637813a9052681",
+      "dimensions": [
+        347,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-024",
+      "type": "Replacement Pods",
+      "flavor": "OMG B-Pop",
+      "name": "Foger Pod OMG B-Pop",
+      "image": "assets/products/foger/pods/omg-b-pop.webp",
+      "sha256": "d8ee2e4300c44f58affd64d1882bd2720cac924252c3fd5d134b170dca95ba64",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-025",
+      "type": "Kits",
+      "flavor": "Strawberry B-Pop",
+      "name": "Foger Kit Strawberry B-Pop",
+      "image": "assets/products/foger/kits/strawberry-b-pop.webp",
+      "sha256": "c7d8f22111354de480a121dbe8a315c4758d446d6552a75fc95017478e959a90",
+      "dimensions": [
+        347,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-025",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry B-Pop",
+      "name": "Foger Pod Strawberry B-Pop",
+      "image": "assets/products/foger/pods/strawberry-b-pop.webp",
+      "sha256": "e6a364dffbc19254e2629b1950dadb4e4c0dae1e5c979cfdac135e95a8fb2b6b",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-026",
+      "type": "Kits",
+      "flavor": "Blue Rancher B-Pop",
+      "name": "Foger Kit Blue Rancher B-Pop",
+      "image": "assets/products/foger/kits/blue-rancher-b-pop.webp",
+      "sha256": "fa99998c5ec052bf88013f5cfb8dd80e3704a6a970015486e48bd7ba18976cb8",
+      "dimensions": [
+        347,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-026",
+      "type": "Replacement Pods",
+      "flavor": "Blue Rancher B-Pop",
+      "name": "Foger Pod Blue Rancher B-Pop",
+      "image": "assets/products/foger/pods/blue-rancher-b-pop.webp",
+      "sha256": "1d10cdb995c9adfcd773f66cef9aacc3dcc6ee8e640c61883b22e5a7e9f98850",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-027",
+      "type": "Kits",
+      "flavor": "Sour Fcuking Fab",
+      "name": "Foger Kit Sour Fcuking Fab",
+      "image": "assets/products/foger/kits/sour-fcuking-fab.webp",
+      "sha256": "68ef768485c7cd1226a7c35d74087f0610ea7b696a7bd9b0b721dd8454946252",
+      "dimensions": [
+        347,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-027",
+      "type": "Replacement Pods",
+      "flavor": "Sour Fcuking Fab",
+      "name": "Foger Pod Sour Fcuking Fab",
+      "image": "assets/products/foger/pods/sour-fcuking-fab.webp",
+      "sha256": "5c837be02f1dd21d454711ce300e5128f8040bee7bbc045eec1ff00fe4240f42",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-028",
+      "type": "Kits",
+      "flavor": "Sour Cranapple",
+      "name": "Foger Kit Sour Cranapple",
+      "image": "assets/products/foger/kits/sour-cranapple.webp",
+      "sha256": "aa59c4d42c05c41e437b3e49ec09d618a5bba2b29f0870be8f890ab8becad1c9",
+      "dimensions": [
+        347,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-028",
+      "type": "Replacement Pods",
+      "flavor": "Sour Cranapple",
+      "name": "Foger Pod Sour Cranapple",
+      "image": "assets/products/foger/pods/sour-cranapple.webp",
+      "sha256": "f420263c1020c35f5c85040c31f1012ff162e7fd910f0522242a4d4f4e25be64",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-029",
+      "type": "Kits",
+      "flavor": "Sour Gush",
+      "name": "Foger Kit Sour Gush",
+      "image": "assets/products/foger/kits/sour-gush.webp",
+      "sha256": "b607f83f4d1115858da05c01814ffc82e26d9d0a732be4e93ed8c95bd9b7c6dd",
+      "dimensions": [
+        347,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-029",
+      "type": "Replacement Pods",
+      "flavor": "Sour Gush",
+      "name": "Foger Pod Sour Gush",
+      "image": "assets/products/foger/pods/sour-gush.webp",
+      "sha256": "aed85d0ac5f27a4343cbd9c97acc2bda1dc1551d670fe2ccc8a45f9fe0387e0f",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-030",
+      "type": "Kits",
+      "flavor": "Sour Blue Dust",
+      "name": "Foger Kit Sour Blue Dust",
+      "image": "assets/products/foger/kits/sour-blue-dust.webp",
+      "sha256": "8a60e2827a8dea41101660faa532161cb2742341c5ce12ce6edac2cd0dc0acbb",
+      "dimensions": [
+        347,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-030",
+      "type": "Replacement Pods",
+      "flavor": "Sour Blue Dust",
+      "name": "Foger Pod Sour Blue Dust",
+      "image": "assets/products/foger/pods/sour-blue-dust.webp",
+      "sha256": "5344b66990b07a55dbc4875816826f1068592023486606a9ea4b245d15757409",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-031",
+      "type": "Kits",
+      "flavor": "Frozen Watermelon",
+      "name": "Foger Kit Frozen Watermelon",
+      "image": "assets/products/foger/kits/frozen-watermelon.webp",
+      "sha256": "260b16ca35b5e968eceb434ee53f898cb32373f19d1c14e4604cafce5bd20887",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-031",
+      "type": "Replacement Pods",
+      "flavor": "Frozen Watermelon",
+      "name": "Foger Pod Frozen Watermelon",
+      "image": "assets/products/foger/pods/frozen-watermelon.webp",
+      "sha256": "71bb93c96fcd163e7669b669a721eeeef3491909ad4523a60d6acffcef26c8b4",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-032",
+      "type": "Kits",
+      "flavor": "Frozen Blueberry",
+      "name": "Foger Kit Frozen Blueberry",
+      "image": "assets/products/foger/kits/frozen-blueberry.webp",
+      "sha256": "7593cec3f6d3e553fbb2c3b375ee2cdf14c25b39dc598fbc372d18d04a56d650",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-032",
+      "type": "Replacement Pods",
+      "flavor": "Frozen Blueberry",
+      "name": "Foger Pod Frozen Blueberry",
+      "image": "assets/products/foger/pods/frozen-blueberry.webp",
+      "sha256": "3d6d60b292cd877bf73c9fe953fe5c0139aa56745be2883ce30be8c2420d72b3",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-033",
+      "type": "Kits",
+      "flavor": "Frozen Banana",
+      "name": "Foger Kit Frozen Banana",
+      "image": "assets/products/foger/kits/frozen-banana.webp",
+      "sha256": "74eed0ed4a94f3e129d81f3973d7b6d328fe555722649b0a5013dbc443c61743",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-033",
+      "type": "Replacement Pods",
+      "flavor": "Frozen Banana",
+      "name": "Foger Pod Frozen Banana",
+      "image": "assets/products/foger/pods/frozen-banana.webp",
+      "sha256": "46ab328b444f9d2507b2626b19faaa08a561e71ac159734399bdb6e29e17bb50",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-034",
+      "type": "Kits",
+      "flavor": "Frozen Lemon",
+      "name": "Foger Kit Frozen Lemon",
+      "image": "assets/products/foger/kits/frozen-lemon.webp",
+      "sha256": "787b7814b9edc299362220c9d454b1fecc66ed919280c641c4538b884ec8fc95",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-034",
+      "type": "Replacement Pods",
+      "flavor": "Frozen Lemon",
+      "name": "Foger Pod Frozen Lemon",
+      "image": "assets/products/foger/pods/frozen-lemon.webp",
+      "sha256": "2d19d680c5dbc0df04efc05448246b43da63c9afd226682eff02b3b4989aa51c",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-035",
+      "type": "Kits",
+      "flavor": "Orange Slush",
+      "name": "Foger Kit Orange Slush",
+      "image": "assets/products/foger/kits/orange-slush.webp",
+      "sha256": "6d817241fa97fcb5e08280e755977d5da2f634c42055b2f0613e8d75b93a2301",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-035",
+      "type": "Replacement Pods",
+      "flavor": "Orange Slush",
+      "name": "Foger Pod Orange Slush",
+      "image": "assets/products/foger/pods/orange-slush.webp",
+      "sha256": "4573002a41732ffee825343de371a9d0b81a4696097818a8905f537ccc42839c",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-036",
+      "type": "Kits",
+      "flavor": "Grape Slush",
+      "name": "Foger Kit Grape Slush",
+      "image": "assets/products/foger/kits/grape-slush.webp",
+      "sha256": "e2329fed8fdddda4d432fdbaf9b80da97517b9299bd48d3b0153f498b307ffaa",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-036",
+      "type": "Replacement Pods",
+      "flavor": "Grape Slush",
+      "name": "Foger Pod Grape Slush",
+      "image": "assets/products/foger/pods/grape-slush.webp",
+      "sha256": "c1e51ce76be21546a8ac3a44b87e31979647c787e78f79f4e974631248433e27",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-037",
+      "type": "Kits",
+      "flavor": "Cola Slush",
+      "name": "Foger Kit Cola Slush",
+      "image": "assets/products/foger/kits/cola-slush.webp",
+      "sha256": "0e9652f711e404dd69e935d19981a1d0184be701476c9534aa8c83cf2aec86d5",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-037",
+      "type": "Replacement Pods",
+      "flavor": "Cola Slush",
+      "name": "Foger Pod Cola Slush",
+      "image": "assets/products/foger/pods/cola-slush.webp",
+      "sha256": "641b7812280801c6bb608e6b30646ac760e796fa201f6f4611282ed9d1e17c8b",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-038",
+      "type": "Kits",
+      "flavor": "Meta Moon",
+      "name": "Foger Kit Meta Moon",
+      "image": "assets/products/foger/kits/meta-moon.webp",
+      "sha256": "87e663e26948d8899264116df40af54f40c3ebccafcf1e265ce0394c0586f5dd",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-038",
+      "type": "Replacement Pods",
+      "flavor": "Meta Moon",
+      "name": "Foger Pod Meta Moon",
+      "image": "assets/products/foger/pods/meta-moon.webp",
+      "sha256": "8afe5cce4cfb59249b1782b4cd8f417f83bc567fd50f118caaca08c7d1742367",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-039",
+      "type": "Kits",
+      "flavor": "Pink & Blue",
+      "name": "Foger Kit Pink & Blue",
+      "image": "assets/products/foger/kits/pink-and-blue.webp",
+      "sha256": "5fdd574f92dbc9875971bdca84c03c57031fdf9bf99f7bf4d40a4a9de9389580",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-039",
+      "type": "Replacement Pods",
+      "flavor": "Pink & Blue",
+      "name": "Foger Pod Pink & Blue",
+      "image": "assets/products/foger/pods/pink-and-blue.webp",
+      "sha256": "616c6a9f8997d6349317aa72535f382926dc2f393f2beae5eb386bda7bd6062f",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-040",
+      "type": "Kits",
+      "flavor": "Dragon Fruit Lemonade",
+      "name": "Foger Kit Dragon Fruit Lemonade",
+      "image": "assets/products/foger/kits/dragon-fruit-lemonade.webp",
+      "sha256": "c94f8e5c79f097ccc7aa9a0fac3c9880368cde699e48d75f21f29dcbd86a2061",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-040",
+      "type": "Replacement Pods",
+      "flavor": "Dragon Fruit Lemonade",
+      "name": "Foger Pod Dragon Fruit Lemonade",
+      "image": "assets/products/foger/pods/dragon-fruit-lemonade.webp",
+      "sha256": "9c58984e8eb35fdc174ebd66d0323f7c1728495824af5e510764a430593c7452",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-041",
+      "type": "Kits",
+      "flavor": "Pink Lemonade",
+      "name": "Foger Kit Pink Lemonade",
+      "image": "assets/products/foger/kits/pink-lemonade.webp",
+      "sha256": "1eab7e367d9f259f4ff504fc30438241a522c857c58c24550ad4977558cf83ce",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-041",
+      "type": "Replacement Pods",
+      "flavor": "Pink Lemonade",
+      "name": "Foger Pod Pink Lemonade",
+      "image": "assets/products/foger/pods/pink-lemonade.webp",
+      "sha256": "a3ec3b4af2af34f950cbd515e66b1f7ed7faecdb9c651795f91b4fda31681944",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-042",
+      "type": "Kits",
+      "flavor": "Cherry Bomb",
+      "name": "Foger Kit Cherry Bomb",
+      "image": "assets/products/foger/kits/cherry-bomb.webp",
+      "sha256": "c0d26afb06c3f0cdf3f963e1ae91ee802fc1d1932ec50e46d8b7723128c20789",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-042",
+      "type": "Replacement Pods",
+      "flavor": "Cherry Bomb",
+      "name": "Foger Pod Cherry Bomb",
+      "image": "assets/products/foger/pods/cherry-bomb.webp",
+      "sha256": "1de744ccc4909791ada54b98bee21b59e6d7c496aef0f5540c09bbb8500d63aa",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-043",
+      "type": "Kits",
+      "flavor": "Vanilla Cupcake",
+      "name": "Foger Kit Vanilla Cupcake",
+      "image": "assets/products/foger/kits/vanilla-cupcake.webp",
+      "sha256": "a796369169b2881eed8f4eeaaa9e8558f592f5896dfef06ff4b71b184fe6c71e",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-043",
+      "type": "Replacement Pods",
+      "flavor": "Vanilla Cupcake",
+      "name": "Foger Pod Vanilla Cupcake",
+      "image": "assets/products/foger/pods/vanilla-cupcake.webp",
+      "sha256": "8b143ce7b2538b3140a55353ef03929f471b4b773c37bd520f01f7163a4d7d99",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-044",
+      "type": "Kits",
+      "flavor": "Chocolate Cupcake",
+      "name": "Foger Kit Chocolate Cupcake",
+      "image": "assets/products/foger/kits/chocolate-cupcake.webp",
+      "sha256": "4e6fd2f323d7018951a472c3654182da2ab06ae658aacf54006cf2872fd7c2c1",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-044",
+      "type": "Replacement Pods",
+      "flavor": "Chocolate Cupcake",
+      "name": "Foger Pod Chocolate Cupcake",
+      "image": "assets/products/foger/pods/chocolate-cupcake.webp",
+      "sha256": "f1d0958a97b55505fecdbc2e693f07f0f524a51ba36b0f69435114c810268900",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-045",
+      "type": "Kits",
+      "flavor": "Skittles Cupcake",
+      "name": "Foger Kit Skittles Cupcake",
+      "image": "assets/products/foger/kits/skittles-cupcake.webp",
+      "sha256": "e9e26a58bcac8b27879b6db70e9d107b527dcfabf6e70271c8301150db8f2b0a",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-045",
+      "type": "Replacement Pods",
+      "flavor": "Skittles Cupcake",
+      "name": "Foger Pod Skittles Cupcake",
+      "image": "assets/products/foger/pods/skittles-cupcake.webp",
+      "sha256": "b40eff8f00a7bad1d0b7e9f7ba4cfb9e15095b978f5744805b5b695d625b8c3f",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-046",
+      "type": "Kits",
+      "flavor": "Coconut Cupcake",
+      "name": "Foger Kit Coconut Cupcake",
+      "image": "assets/products/foger/kits/coconut-cupcake.webp",
+      "sha256": "2eceb991d2fbee5d1de258b3663d6ca487714c55d7634dc8100341496736966e",
+      "dimensions": [
+        348,
+        700
+      ]
+    },
+    {
+      "id": "foger-pod-046",
+      "type": "Replacement Pods",
+      "flavor": "Coconut Cupcake",
+      "name": "Foger Pod Coconut Cupcake",
+      "image": "assets/products/foger/pods/coconut-cupcake.webp",
+      "sha256": "df59ab1cd808ea0de54a64ced8f848499af36f517af381ab99e96ca7520ea799",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-047",
+      "type": "Kits",
+      "flavor": "Red Velvet Cupcake",
+      "name": "Foger Kit Red Velvet Cupcake",
+      "image": "assets/products/foger/kits/red-velvet-cupcake.webp",
+      "sha256": "63bcdf1aaa4e5536a78549c04fbf8d2b6ddd85adec42fd823880e000835cec35",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-047",
+      "type": "Replacement Pods",
+      "flavor": "Red Velvet Cupcake",
+      "name": "Foger Pod Red Velvet Cupcake",
+      "image": "assets/products/foger/pods/red-velvet-cupcake.webp",
+      "sha256": "4d0e44e3827fbd44858d93479a89465421f927038020a916ebd43902f42a05bd",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-048",
+      "type": "Kits",
+      "flavor": "Hawaiian Punch",
+      "name": "Foger Kit Hawaiian Punch",
+      "image": "assets/products/foger/kits/hawaiian-punch.webp",
+      "sha256": "29e09912a902c49214f8a9c05842a0b08806e76a114bb66f635816622691e3eb",
+      "dimensions": [
+        550,
+        550
+      ]
+    },
+    {
+      "id": "foger-pod-048",
+      "type": "Replacement Pods",
+      "flavor": "Hawaiian Punch",
+      "name": "Foger Pod Hawaiian Punch",
+      "image": "assets/products/foger/pods/hawaiian-punch.webp",
+      "sha256": "e2a206f11892a4cb02ecd32999a10fb5b33b9ee82f789230cdd605e8a152be5e",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-049",
+      "type": "Kits",
+      "flavor": "Triple Berry Punch",
+      "name": "Foger Kit Triple Berry Punch",
+      "image": "assets/products/foger/kits/triple-berry-punch.webp",
+      "sha256": "ccd93cf98a472ff3156dc4e009ff24d0481a5254899e0140987ae3565a6465b8",
+      "dimensions": [
+        550,
+        550
+      ]
+    },
+    {
+      "id": "foger-pod-049",
+      "type": "Replacement Pods",
+      "flavor": "Triple Berry Punch",
+      "name": "Foger Pod Triple Berry Punch",
+      "image": "assets/products/foger/pods/triple-berry-punch.webp",
+      "sha256": "d3e79952066083c510aa57ea7266f6f9c77a7227b39c78ad7a6e2bb87cbebb0c",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-050",
+      "type": "Kits",
+      "flavor": "Purple Passion Punch",
+      "name": "Foger Kit Purple Passion Punch",
+      "image": "assets/products/foger/kits/purple-passion-punch.webp",
+      "sha256": "d900076ddeebf0e59f120432e12e58a6659b9dee935925eb9e3697a228022543",
+      "dimensions": [
+        550,
+        550
+      ]
+    },
+    {
+      "id": "foger-pod-050",
+      "type": "Replacement Pods",
+      "flavor": "Purple Passion Punch",
+      "name": "Foger Pod Purple Passion Punch",
+      "image": "assets/products/foger/pods/purple-passion-punch.webp",
+      "sha256": "ef1e4fc084fde5bd0c6f1775cba9e307898bef8f43b27d150addf2a7e63bdaab",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-051",
+      "type": "Kits",
+      "flavor": "Sour Raspberry Punch",
+      "name": "Foger Kit Sour Raspberry Punch",
+      "image": "assets/products/foger/kits/sour-raspberry-punch.webp",
+      "sha256": "b828c915e832b26dd50ffe6ef24f5a4b4511f811d566dedb62c1d644bb8a3680",
+      "dimensions": [
+        550,
+        550
+      ]
+    },
+    {
+      "id": "foger-pod-051",
+      "type": "Replacement Pods",
+      "flavor": "Sour Raspberry Punch",
+      "name": "Foger Pod Sour Raspberry Punch",
+      "image": "assets/products/foger/pods/sour-raspberry-punch.webp",
+      "sha256": "a3e97f86a89dcf78e789181b335a2610b141ab25432659cb31585d7a79908d99",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-052",
+      "type": "Kits",
+      "flavor": "Peach Slush",
+      "name": "Foger Kit Peach Slush",
+      "image": "assets/products/foger/kits/peach-slush.webp",
+      "sha256": "766a828eba1776605076dc82e2f2d2c6d57ac2e7ba9824d6eabfd5fb22fb1247",
+      "dimensions": [
+        550,
+        550
+      ]
+    },
+    {
+      "id": "foger-pod-052",
+      "type": "Replacement Pods",
+      "flavor": "Peach Slush",
+      "name": "Foger Pod Peach Slush",
+      "image": "assets/products/foger/pods/peach-slush.webp",
+      "sha256": "b27636978dd503210236bc1eefce43e1d0c20af95e7a6607e44a1f658f83afd2",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-053",
+      "type": "Kits",
+      "flavor": "Strawberry Slush",
+      "name": "Foger Kit Strawberry Slush",
+      "image": "assets/products/foger/kits/strawberry-slush.webp",
+      "sha256": "7e4ef7bb1ab95e08b4e9216b6923d544b10a460de5d5099aee8da8af93086722",
+      "dimensions": [
+        550,
+        550
+      ]
+    },
+    {
+      "id": "foger-pod-053",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry Slush",
+      "name": "Foger Pod Strawberry Slush",
+      "image": "assets/products/foger/pods/strawberry-slush.webp",
+      "sha256": "7cca2b01fb7e69c964c337be3e3b15fc48a2e90d681e07888cd9c72fbd14907e",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-054",
+      "type": "Kits",
+      "flavor": "Cherry Slush",
+      "name": "Foger Kit Cherry Slush",
+      "image": "assets/products/foger/kits/cherry-slush.webp",
+      "sha256": "9279c3077133ab083d475a0518bcc24f7cba6c58c54dda76fb07d4fdb93dc8af",
+      "dimensions": [
+        550,
+        550
+      ]
+    },
+    {
+      "id": "foger-pod-054",
+      "type": "Replacement Pods",
+      "flavor": "Cherry Slush",
+      "name": "Foger Pod Cherry Slush",
+      "image": "assets/products/foger/pods/cherry-slush.webp",
+      "sha256": "152f35c0b8f918f5376cc7615b378528c706e4db556966ede417ffc426b86838",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-055",
+      "type": "Kits",
+      "flavor": "Dragon Melon",
+      "name": "Foger Kit Dragon Melon",
+      "image": "assets/products/foger/kits/dragon-melon.webp",
+      "sha256": "589c4c3c28f594c4e1cf490af673825046e99151f00d1b63f817c446a63212cd",
+      "dimensions": [
+        363,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-055",
+      "type": "Replacement Pods",
+      "flavor": "Dragon Melon",
+      "name": "Foger Pod Dragon Melon",
+      "image": "assets/products/foger/pods/dragon-melon.webp",
+      "sha256": "34bafe173d8190ce629f7358b10382f63c12fb083110545427c7132ddfc5a677",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-056",
+      "type": "Kits",
+      "flavor": "California Cherry",
+      "name": "Foger Kit California Cherry",
+      "image": "assets/products/foger/kits/california-cherry.webp",
+      "sha256": "ae7ea9b530e5b18eeed701cfe24ee0868982ed1172defe5e1d94eeb88032d07d",
+      "dimensions": [
+        363,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-056",
+      "type": "Replacement Pods",
+      "flavor": "California Cherry",
+      "name": "Foger Pod California Cherry",
+      "image": "assets/products/foger/pods/california-cherry.webp",
+      "sha256": "1201e9d1f16a1b5773df8bbd7fa3a11c096bb7a44e33943278263efc95eae5cf",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-057",
+      "type": "Kits",
+      "flavor": "Berry Bliss",
+      "name": "Foger Kit Berry Bliss",
+      "image": "assets/products/foger/kits/berry-bliss.webp",
+      "sha256": "7a2ae77f4e53d492ff004d63e1bd3204f84391e7390d0397b438a9c88fdc94e4",
+      "dimensions": [
+        363,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-057",
+      "type": "Replacement Pods",
+      "flavor": "Berry Bliss",
+      "name": "Foger Pod Berry Bliss",
+      "image": "assets/products/foger/pods/berry-bliss.webp",
+      "sha256": "cd67e4d2573d52b3b83e529a5b6b65e34e11db2458eb30b3eefaee3ee9f8f32c",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-058",
+      "type": "Kits",
+      "flavor": "Frozen Blackberry",
+      "name": "Foger Kit Frozen Blackberry",
+      "image": "assets/products/foger/kits/frozen-blackberry.webp",
+      "sha256": "0c6d0fa6a7ed9b848829e263e91fac36142b2e37181537a76d1f4a9856384603",
+      "dimensions": [
+        363,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-058",
+      "type": "Replacement Pods",
+      "flavor": "Frozen Blackberry",
+      "name": "Foger Pod Frozen Blackberry",
+      "image": "assets/products/foger/pods/frozen-blackberry.webp",
+      "sha256": "fa694dded3bb936ee58482d84984022d7ec71f375f0886898040d63d055b00c9",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-059",
+      "type": "Kits",
+      "flavor": "Frozen Pineapple",
+      "name": "Foger Kit Frozen Pineapple",
+      "image": "assets/products/foger/kits/frozen-pineapple.webp",
+      "sha256": "57d50ea5f9a603c485aa365d19eb902d0138e3063c2aacd21951eebeb880a55a",
+      "dimensions": [
+        363,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-059",
+      "type": "Replacement Pods",
+      "flavor": "Frozen Pineapple",
+      "name": "Foger Pod Frozen Pineapple",
+      "image": "assets/products/foger/pods/frozen-pineapple.webp",
+      "sha256": "17ba3fbee4411af3a8318f759d5ab621c8f78addb10f3917c7c0ae85fe420068",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-060",
+      "type": "Kits",
+      "flavor": "Strawnana Ice Cream",
+      "name": "Foger Kit Strawnana Ice Cream",
+      "image": "assets/products/foger/kits/strawnana-ice-cream.webp",
+      "sha256": "3e9217a0771b36429ede760d99355413cb81cbb5d069c1d2565af27200305d3e",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-060",
+      "type": "Replacement Pods",
+      "flavor": "Strawnana Ice Cream",
+      "name": "Foger Pod Strawnana Ice Cream",
+      "image": "assets/products/foger/pods/strawnana-ice-cream.webp",
+      "sha256": "b920be1da8d620294b50776797e002564fe60c50698b11579e218a23a1092385",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-061",
+      "type": "Kits",
+      "flavor": "Vanilla Ice Cream",
+      "name": "Foger Kit Vanilla Ice Cream",
+      "image": "assets/products/foger/kits/vanilla-ice-cream.webp",
+      "sha256": "2d397cc08e8c70f272c6c9b51964e602b9f6ce1fd2db54e9c08f0a80b79e9d51",
+      "dimensions": [
+        363,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-061",
+      "type": "Replacement Pods",
+      "flavor": "Vanilla Ice Cream",
+      "name": "Foger Pod Vanilla Ice Cream",
+      "image": "assets/products/foger/pods/vanilla-ice-cream.webp",
+      "sha256": "a2cc48f39eed6889af1e6ce2086c9a3788013dc26c82c509ec394ae61ddebcfb",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-062",
+      "type": "Kits",
+      "flavor": "Watermelon Cotton Candy",
+      "name": "Foger Kit Watermelon Cotton Candy",
+      "image": "assets/products/foger/kits/watermelon-cotton-candy.webp",
+      "sha256": "2600d74c2894f9822f6e1fa95ab8de4559495167c9da1d53c4296bb66c590f97",
+      "dimensions": [
+        363,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-062",
+      "type": "Replacement Pods",
+      "flavor": "Watermelon Cotton Candy",
+      "name": "Foger Pod Watermelon Cotton Candy",
+      "image": "assets/products/foger/pods/watermelon-cotton-candy.webp",
+      "sha256": "a5e3dd18423b0a2a2010b92f0e4c0687115b425b2ac4e7b9044542ecb3a06dc5",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-063",
+      "type": "Kits",
+      "flavor": "Blueberry Cotton Candy",
+      "name": "Foger Kit Blueberry Cotton Candy",
+      "image": "assets/products/foger/kits/blueberry-cotton-candy.webp",
+      "sha256": "9e8d991138e14c963670378bfa51133b5124817b5ccec728ed7f3e4eba602516",
+      "dimensions": [
+        363,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-063",
+      "type": "Replacement Pods",
+      "flavor": "Blueberry Cotton Candy",
+      "name": "Foger Pod Blueberry Cotton Candy",
+      "image": "assets/products/foger/pods/blueberry-cotton-candy.webp",
+      "sha256": "520813d566a058767f3978e26664d2e023ef789e949f0a9f19a61cef3693e724",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-064",
+      "type": "Kits",
+      "flavor": "Strawberry Cotton Candy",
+      "name": "Foger Kit Strawberry Cotton Candy",
+      "image": "assets/products/foger/kits/strawberry-cotton-candy.webp",
+      "sha256": "6c046efc167aaeba0384f94351293848596e2efc8c2a0521eba435e617af8093",
+      "dimensions": [
+        363,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-064",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry Cotton Candy",
+      "name": "Foger Pod Strawberry Cotton Candy",
+      "image": "assets/products/foger/pods/strawberry-cotton-candy.webp",
+      "sha256": "ab724c5722cf8bdbb9729e474d700faf2f5a51af3fedceeff22666a836596561",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-065",
+      "type": "Kits",
+      "flavor": "Blue Dragon",
+      "name": "Foger Kit Blue Dragon",
+      "image": "assets/products/foger/kits/blue-dragon.webp",
+      "sha256": "4503f6743be71fcb1d71fdbef0f40bacd31bb36a1a640b5403b057fb34efa119",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-065",
+      "type": "Replacement Pods",
+      "flavor": "Blue Dragon",
+      "name": "Foger Pod Blue Dragon",
+      "image": "assets/products/foger/pods/blue-dragon.webp",
+      "sha256": "6697cc45ac3bcff1a3d42ef9472b95d5ca0566023f60f9aa47c0de4eb695788e",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-066",
+      "type": "Kits",
+      "flavor": "Blue Sour Raspberry",
+      "name": "Foger Kit Blue Sour Raspberry",
+      "image": "assets/products/foger/kits/blue-sour-raspberry.webp",
+      "sha256": "291945d0505561a444e848f9ea326224813d6f6cd0cea2e946fc305d17cd1311",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-066",
+      "type": "Replacement Pods",
+      "flavor": "Blue Sour Raspberry",
+      "name": "Foger Pod Blue Sour Raspberry",
+      "image": "assets/products/foger/pods/blue-sour-raspberry.webp",
+      "sha256": "1ad3f761989125e42fda80465e628f87e6d9a40339765aee6b52ba554f00e34d",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-067",
+      "type": "Kits",
+      "flavor": "Sour Punch",
+      "name": "Foger Kit Sour Punch",
+      "image": "assets/products/foger/kits/sour-punch.webp",
+      "sha256": "0ef13dd80e27ce15c9a1e92ce15325487be5a4e64174f58548ef39d4ea06b840",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-067",
+      "type": "Replacement Pods",
+      "flavor": "Sour Punch",
+      "name": "Foger Pod Sour Punch",
+      "image": "assets/products/foger/pods/sour-punch.webp",
+      "sha256": "78b8e626793df6de8facdd2b8b895dd73d066de5ecab138499fa0bca6ea49ac5",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-068",
+      "type": "Kits",
+      "flavor": "Lemon Heads",
+      "name": "Foger Kit Lemon Heads",
+      "image": "assets/products/foger/kits/lemon-heads.webp",
+      "sha256": "9f1ec1dfdedaa0ad3ff8fd31c817eeae8d58789f00ca493d962fe7ea627e0c76",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-068",
+      "type": "Replacement Pods",
+      "flavor": "Lemon Heads",
+      "name": "Foger Pod Lemon Heads",
+      "image": "assets/products/foger/pods/lemon-heads.webp",
+      "sha256": "821d9f1531079180be8a5d5934bd7c45ef57f62c563401062c6f902ec7a2c79c",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-069",
+      "type": "Kits",
+      "flavor": "Strawberry Mango",
+      "name": "Foger Kit Strawberry Mango",
+      "image": "assets/products/foger/kits/strawberry-mango.webp",
+      "sha256": "153543754f558ee179b5f4004efc7d92f0e2ec8012007f87de28a561126b32a8",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-069",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry Mango",
+      "name": "Foger Pod Strawberry Mango",
+      "image": "assets/products/foger/pods/strawberry-mango.webp",
+      "sha256": "f1ec2dfa4203326eb5267edd955c1e5dfaef24e22d74ce3f7cb06a6d7a9162a2",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-070",
+      "type": "Kits",
+      "flavor": "Blackberry Blueberry",
+      "name": "Foger Kit Blackberry Blueberry",
+      "image": "assets/products/foger/kits/blackberry-blueberry.webp",
+      "sha256": "307e8f25795211f109f6d1f409b1ccd98c087e381841bff2894f84d2823c113b",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-070",
+      "type": "Replacement Pods",
+      "flavor": "Blackberry Blueberry",
+      "name": "Foger Pod Blackberry Blueberry",
+      "image": "assets/products/foger/pods/blackberry-blueberry.webp",
+      "sha256": "8bedb304484ff5e91ffa251d82b58a84f4d2b2f0010e66d53dc8148f2f2890cb",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-071",
+      "type": "Kits",
+      "flavor": "Lime Berry Orange",
+      "name": "Foger Kit Lime Berry Orange",
+      "image": "assets/products/foger/kits/lime-berry-orange.webp",
+      "sha256": "da58948f095aaa0d8c6ae700f252b6655b7572aa793b701bd530dcbafd5015f5",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-071",
+      "type": "Replacement Pods",
+      "flavor": "Lime Berry Orange",
+      "name": "Foger Pod Lime Berry Orange",
+      "image": "assets/products/foger/pods/lime-berry-orange.webp",
+      "sha256": "beabb0553e1b505779e46c64b07695dc96851d63634fe03a1abf9c6df879b473",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-072",
+      "type": "Kits",
+      "flavor": "Raspberry Watermelon",
+      "name": "Foger Kit Raspberry Watermelon",
+      "image": "assets/products/foger/kits/raspberry-watermelon.webp",
+      "sha256": "038eba27154c74ca477cd81b6f425e48f3c5df17621a93e7da22cd42d86f7ce0",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-072",
+      "type": "Replacement Pods",
+      "flavor": "Raspberry Watermelon",
+      "name": "Foger Pod Raspberry Watermelon",
+      "image": "assets/products/foger/pods/raspberry-watermelon.webp",
+      "sha256": "f6cdf3275817079e740d0e25b8cbbf6832b0eb935327231401a94b5b552187fa",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-073",
+      "type": "Kits",
+      "flavor": "Blackberry Passion Refresher",
+      "name": "Foger Kit Blackberry Passion Refresher",
+      "image": "assets/products/foger/kits/blackberry-passion-refresher.webp",
+      "sha256": "5ec0f1452aeea882dc56e3220e475860863be0fe32f879a4986daff4a0d920a5",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-073",
+      "type": "Replacement Pods",
+      "flavor": "Blackberry Passion Refresher",
+      "name": "Foger Pod Blackberry Passion Refresher",
+      "image": "assets/products/foger/pods/blackberry-passion-refresher.webp",
+      "sha256": "8b1f77fced13085600f604b1a8336bbc78fd6f6f470d5be05eb0a1f2c58035ff",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-074",
+      "type": "Kits",
+      "flavor": "Orange Dream Refresher",
+      "name": "Foger Kit Orange Dream Refresher",
+      "image": "assets/products/foger/kits/orange-dream-refresher.webp",
+      "sha256": "1f6ce5c06622bae1f9e7984c444b1301085b5edeb983e74c31128a01ca65c9e3",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-074",
+      "type": "Replacement Pods",
+      "flavor": "Orange Dream Refresher",
+      "name": "Foger Pod Orange Dream Refresher",
+      "image": "assets/products/foger/pods/orange-dream-refresher.webp",
+      "sha256": "fc38c16bc8b3dc22eff034bc4af2477881d5329bbb740e662c602d413f6d8f00",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-075",
+      "type": "Kits",
+      "flavor": "Mango Pineapple Refresher",
+      "name": "Foger Kit Mango Pineapple Refresher",
+      "image": "assets/products/foger/kits/mango-pineapple-refresher.webp",
+      "sha256": "f818fd023a4dcc1a71b0364beaf52b5d211fbd5500308661c51b4f47961d3dee",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-075",
+      "type": "Replacement Pods",
+      "flavor": "Mango Pineapple Refresher",
+      "name": "Foger Pod Mango Pineapple Refresher",
+      "image": "assets/products/foger/pods/mango-pineapple-refresher.webp",
+      "sha256": "1c2fb50d11758ca474d27d043db86238139eadcd4cc7920c387daaad5ffb7c97",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-076",
+      "type": "Kits",
+      "flavor": "Peach Berries Refresher",
+      "name": "Foger Kit Peach Berries Refresher",
+      "image": "assets/products/foger/kits/peach-berries-refresher.webp",
+      "sha256": "18996471251fd0d9a82e92ea1e0929d86d2d0d3f842ceb5c17aa4dbe95e368e5",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-076",
+      "type": "Replacement Pods",
+      "flavor": "Peach Berries Refresher",
+      "name": "Foger Pod Peach Berries Refresher",
+      "image": "assets/products/foger/pods/peach-berries-refresher.webp",
+      "sha256": "ef5c14ca0e3bd4d3f7286ff4e780ff54764ad04b3ac8805f6bd4f1724b1bf93c",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-077",
+      "type": "Kits",
+      "flavor": "Red Mix Refresher",
+      "name": "Foger Kit Red Mix Refresher",
+      "image": "assets/products/foger/kits/red-mix-refresher.webp",
+      "sha256": "e688d93fdbd9e8ea7f7c24346d4f579e9a64535ef5b84e4eb4ff7accf4a9091d",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-077",
+      "type": "Replacement Pods",
+      "flavor": "Red Mix Refresher",
+      "name": "Foger Pod Red Mix Refresher",
+      "image": "assets/products/foger/pods/red-mix-refresher.webp",
+      "sha256": "4a78a023f7e8c00bdf2152d84d624ddc0127eba107c03979bea231049dc9a65a",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-078",
+      "type": "Kits",
+      "flavor": "Frozen Strawberry Grapefruit",
+      "name": "Foger Kit Frozen Strawberry Grapefruit",
+      "image": "assets/products/foger/kits/frozen-strawberry-grapefruit.webp",
+      "sha256": "433dc5b23757e0df548e4bd0bc4a743f09a6fa92ffac2f32edebe4e762bc4158",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-078",
+      "type": "Replacement Pods",
+      "flavor": "Frozen Strawberry Grapefruit",
+      "name": "Foger Pod Frozen Strawberry Grapefruit",
+      "image": "assets/products/foger/pods/frozen-strawberry-grapefruit.webp",
+      "sha256": "c9ec5cc41588fc136fd0d7586835b0e869f876ef0bc475c787002f9eea36c2bc",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-079",
+      "type": "Kits",
+      "flavor": "Frozen Summer Pear",
+      "name": "Foger Kit Frozen Summer Pear",
+      "image": "assets/products/foger/kits/frozen-summer-pear.webp",
+      "sha256": "d87399d42ff416d29c27078149d1e4762f22f750538197ec57f15004d17d523a",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-079",
+      "type": "Replacement Pods",
+      "flavor": "Frozen Summer Pear",
+      "name": "Foger Pod Frozen Summer Pear",
+      "image": "assets/products/foger/pods/frozen-summer-pear.webp",
+      "sha256": "53c252655ba525b671b0e4f551e80ac8024f0a0f71f75a4458ca8e2fdf3e6fff",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-080",
+      "type": "Kits",
+      "flavor": "Frozen Wildberry Mix",
+      "name": "Foger Kit Frozen Wildberry Mix",
+      "image": "assets/products/foger/kits/frozen-wildberry-mix.webp",
+      "sha256": "14aa76c70085de959a42f228f41c1255e0d26d6b4b8eea4749819723c35089a9",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-080",
+      "type": "Replacement Pods",
+      "flavor": "Frozen Wildberry Mix",
+      "name": "Foger Pod Frozen Wildberry Mix",
+      "image": "assets/products/foger/pods/frozen-wildberry-mix.webp",
+      "sha256": "be572e62a38e39524a11d1d55d1f589eb9bfadefe9cf01f9107953481a7da4ee",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-081",
+      "type": "Kits",
+      "flavor": "Frozen Orange & Green",
+      "name": "Foger Kit Frozen Orange & Green",
+      "image": "assets/products/foger/kits/frozen-orange-and-green.webp",
+      "sha256": "2b836a31d0ebc4389bfc0cf7158613be91b8cd967acdd89d41fa27ddeedf0606",
+      "dimensions": [
+        900,
+        563
+      ]
+    },
+    {
+      "id": "foger-pod-081",
+      "type": "Replacement Pods",
+      "flavor": "Frozen Orange & Green",
+      "name": "Foger Pod Frozen Orange & Green",
+      "image": "assets/products/foger/pods/frozen-orange-and-green.webp",
+      "sha256": "6ce9edd2649dbf57564b490ad34924901c80384e854a29480c0dae76cce9740f",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-082",
+      "type": "Kits",
+      "flavor": "Pineapple Savers",
+      "name": "Foger Kit Pineapple Savers",
+      "image": "assets/products/foger/kits/pineapple-savers.webp",
+      "sha256": "fa209a71ae9755f7aff97ddcf3445d72994f412542fb73cac5a4c1f04ad64da3",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-082",
+      "type": "Replacement Pods",
+      "flavor": "Pineapple Savers",
+      "name": "Foger Pod Pineapple Savers",
+      "image": "assets/products/foger/pods/pineapple-savers.webp",
+      "sha256": "744348232296f1afe579ba68509c0e38a9474c3196d460c6a691882bf7067d08",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-083",
+      "type": "Kits",
+      "flavor": "Mint Lemonade",
+      "name": "Foger Kit Mint Lemonade",
+      "image": "assets/products/foger/kits/mint-lemonade.webp",
+      "sha256": "6dd82c30db65c7102e2d756669813a39e983fa3607b3b55afec135370043f440",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-083",
+      "type": "Replacement Pods",
+      "flavor": "Mint Lemonade",
+      "name": "Foger Pod Mint Lemonade",
+      "image": "assets/products/foger/pods/mint-lemonade.webp",
+      "sha256": "9baf7b7b56936bf0af93bdaba33aa037fc0bfa5bf4932000707addbb69015db9",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-084",
+      "type": "Kits",
+      "flavor": "Wildberry Savers",
+      "name": "Foger Kit Wildberry Savers",
+      "image": "assets/products/foger/kits/wildberry-savers.webp",
+      "sha256": "e0847eff3b84b3303219ee477d4bdbf6baa6701987e536ed8f471c3f547fabbf",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-084",
+      "type": "Replacement Pods",
+      "flavor": "Wildberry Savers",
+      "name": "Foger Pod Wildberry Savers",
+      "image": "assets/products/foger/pods/wildberry-savers.webp",
+      "sha256": "94f3eb9b886c0cc3201cf2ad364ca1bb9d6a2d08bbb7b32c604abfd45e244ed4",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-085",
+      "type": "Kits",
+      "flavor": "Drop Sour Savers",
+      "name": "Foger Kit Drop Sour Savers",
+      "image": "assets/products/foger/kits/drop-sour-savers.webp",
+      "sha256": "d498725c060b2d0986dfc56b906555005d7dbb9a3cc3b79793c401a0f940bf7f",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-085",
+      "type": "Replacement Pods",
+      "flavor": "Drop Sour Savers",
+      "name": "Foger Pod Drop Sour Savers",
+      "image": "assets/products/foger/pods/drop-sour-savers.webp",
+      "sha256": "cdf0c40803ae6c096f3b0454619e69ac810c9292c5425b77281682333c965191",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-086",
+      "type": "Kits",
+      "flavor": "Tropical Hubba",
+      "name": "Foger Kit Tropical Hubba",
+      "image": "assets/products/foger/kits/tropical-hubba.webp",
+      "sha256": "25514c3ca961ef056e07dbabf4f021b4adea09ad62bdcc06666f3ff47cad4888",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-086",
+      "type": "Replacement Pods",
+      "flavor": "Tropical Hubba",
+      "name": "Foger Pod Tropical Hubba",
+      "image": "assets/products/foger/pods/tropical-hubba.webp",
+      "sha256": "408cf62b517b46bc2964ce3336b42b5eb255e2babf7dbbee1f62d8064c48ca5d",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-087",
+      "type": "Kits",
+      "flavor": "Sour Cherry Savers",
+      "name": "Foger Kit Sour Cherry Savers",
+      "image": "assets/products/foger/kits/sour-cherry-savers.webp",
+      "sha256": "a2067bd54a4e5234e0ab592e2d5d35386089b3d5f04e679e87c5e785c6b7dc76",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-087",
+      "type": "Replacement Pods",
+      "flavor": "Sour Cherry Savers",
+      "name": "Foger Pod Sour Cherry Savers",
+      "image": "assets/products/foger/pods/sour-cherry-savers.webp",
+      "sha256": "ac366e34bd938738072098f60169fc8e91eb3489b88324aa39695488a3d32891",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-088",
+      "type": "Kits",
+      "flavor": "Strawberry Watermelon Hubba",
+      "name": "Foger Kit Strawberry Watermelon Hubba",
+      "image": "assets/products/foger/kits/strawberry-watermelon-hubba.webp",
+      "sha256": "5a557f68880970aada20bd0aeb2b2eea3f9d87395f576f45c5f847d5cc3f0491",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-088",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry Watermelon Hubba",
+      "name": "Foger Pod Strawberry Watermelon Hubba",
+      "image": "assets/products/foger/pods/strawberry-watermelon-hubba.webp",
+      "sha256": "125a691d887418611231b19813792aa3734c3465f1cdb2f8faa9be3fec76a5ea",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-089",
+      "type": "Kits",
+      "flavor": "Strawberry Savers",
+      "name": "Foger Kit Strawberry Savers",
+      "image": "assets/products/foger/kits/strawberry-savers.webp",
+      "sha256": "43fa51d8f758246bc792e5bd09afbc3e18d3a02cb35e84ee2a457c4baaf0d8cd",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-089",
+      "type": "Replacement Pods",
+      "flavor": "Strawberry Savers",
+      "name": "Foger Pod Strawberry Savers",
+      "image": "assets/products/foger/pods/strawberry-savers.webp",
+      "sha256": "bb236adf30684e1869fa1e97ed802eec746dbf98e1739ec768f0767b2db4d20c",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-090",
+      "type": "Kits",
+      "flavor": "Lemon Hubba",
+      "name": "Foger Kit Lemon Hubba",
+      "image": "assets/products/foger/kits/lemon-hubba.webp",
+      "sha256": "b2b812f41a14b0c9aef7745fd7af0adfbf8a098dab309dba1848083b35d31418",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-090",
+      "type": "Replacement Pods",
+      "flavor": "Lemon Hubba",
+      "name": "Foger Pod Lemon Hubba",
+      "image": "assets/products/foger/pods/lemon-hubba.webp",
+      "sha256": "06b16c13a337ea2e7e1f9f43d85f1207d0bd03c284346288d5c64b94906a2f20",
+      "dimensions": [
+        600,
+        600
+      ]
+    },
+    {
+      "id": "foger-kit-091",
+      "type": "Kits",
+      "flavor": "Baja Splash",
+      "name": "Foger Kit Baja Splash",
+      "image": "assets/products/foger/kits/baja-splash.webp",
+      "sha256": "ed2bc85e26930b03246581d3c022e9bfcdba4fbd94082d67e774a2dca02fa730",
+      "dimensions": [
+        335,
+        675
+      ]
+    },
+    {
+      "id": "foger-pod-091",
+      "type": "Replacement Pods",
+      "flavor": "Baja Splash",
+      "name": "Foger Pod Baja Splash",
+      "image": "assets/products/foger/pods/baja-splash.webp",
+      "sha256": "084a06a32941a01fb1a9cd097d021b187fd47efd9926bb34085d9908c3945d94",
+      "dimensions": [
+        600,
+        600
+      ]
+    }
+  ]
+}

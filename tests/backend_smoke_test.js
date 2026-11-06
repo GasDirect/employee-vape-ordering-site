@@ -25,7 +25,7 @@ const scripts = {
   },
   UrlFetchApp: {
     fetch:()=>({getResponseCode:()=>200,getContentText:()=>JSON.stringify(products)}),
-    fetchAll: reqs=>reqs.map(req => { assert(req.url.includes('/assets/email-thumbnails/foger/kits/')); assert(req.url.endsWith('.png')); return ({getResponseCode:()=>200, getBlob:()=>({
+    fetchAll: reqs=>reqs.map(req => { assert(/\/assets\/email-thumbnails\/foger\/(?:kits|pods)\//.test(req.url)); assert(req.url.endsWith('.png')); return ({getResponseCode:()=>200, getBlob:()=>({
       getBytes:()=>[1,2,3],getContentType:()=> 'image/png',
       setContentType(){return this;},setName(){return this;}
     })})})
@@ -39,6 +39,8 @@ assert.equal(setup.catalogProducts,182);
 assert.equal(setup.emailRecipient,'lpgasbilling@gmail.com');
 assert.equal(setup.remainingDailyRecipientQuota,50);
 assert.equal(emails.length,0);
+assert(scripts.catalogEmailImageUrl('assets/products/foger/kits/cool-mint.webp').endsWith('/assets/email-thumbnails/foger/kits/cool-mint.png'));
+assert(scripts.catalogEmailImageUrl('assets/products/foger/pods/cool-mint.webp').endsWith('/assets/email-thumbnails/foger/pods/cool-mint.png'));
 const base=()=>({version:1, requestId:'test-request-id', clientId:'test-client-id',
   startedAt:Date.now()-3000, submittedAt:new Date().toISOString(), submittedLocal:'Now',timeZone:'America/New_York',
   store:'South 60 Market',storeId:'south-60',employeeName:'Test Staff',generalNotes:'Please review',honeypot:'',
@@ -59,8 +61,8 @@ assert(!emails[0].body.includes('FAKE BRAND'));
 assert(emails[0].htmlBody.includes('src="cid:'));
 assert(!emails[0].htmlBody.includes('object-fit:contain'));
 assert(!emails[0].htmlBody.includes('height:auto'));
-assert(emails[0].htmlBody.includes('No image'));
-assert.equal(Object.keys(emails[0].inlineImages).length,1);
+assert(!emails[0].htmlBody.includes('No image'));
+assert.equal(Object.keys(emails[0].inlineImages).length,2);
 const again=post(firstRequest);
 assert(again.includes('"duplicate":true'));
 assert.equal(emails.length,1);
@@ -76,4 +78,4 @@ const allowed=post(future);
 assert(allowed.includes('"ok":true'));
 assert.equal(emails.length,2);
 assert(emails[1].body.includes('Breeze Test Product'));
-console.log('PASS: new backend catalog identity, kit-photo inline and pod placeholder, duplicate guard, invalid ID rejection, future brand, no actual email.');
+console.log('PASS: new backend catalog identity, Kit and Pod inline photos, duplicate guard, invalid ID rejection, future brand, no actual email.');
