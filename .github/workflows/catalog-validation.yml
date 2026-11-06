@@ -37,6 +37,12 @@ jobs:
       - name: Verify 182 Foger images and Kit/Pod mappings
         run: python3 tools/verify_foger_images.py
 
+      - name: Verify flavor family coverage, source sequence, and Kit/Pod pairing
+        run: python3 tools/validate_flavor_navigation.py
+
+      - name: Check client JavaScript syntax
+        run: node --check assets/app.js
+
       - name: Test website, email backend, and cache isolation
         run: |
           node tests/smoke_test.js

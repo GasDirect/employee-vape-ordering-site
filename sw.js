@@ -1,7 +1,7 @@
-const VERSION = 'employee-vape-order-v2-2026-11-05';
+const VERSION = 'employee-vape-order-v3-2026-11-05-flavors';
 const SHELL = [
-  './', './index.html', './assets/styles.css?v=2026-11-05-vape-images-v3', './assets/app.js?v=2026-11-05-vape-images-v3',
-  './data/config.json', './data/products.json', './manifest.webmanifest',
+  './', './index.html', './assets/styles.css?v=2026-11-05-flavor-nav-v1', './assets/app.js?v=2026-11-05-flavor-nav-v1',
+  './data/config.json', './data/products.json', './data/flavor-groups.json', './manifest.webmanifest',
   './assets/icons/icon-192.png', './assets/icons/icon-512.png'
 ];
 
