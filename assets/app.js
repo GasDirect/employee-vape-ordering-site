@@ -384,6 +384,7 @@
     }
   }
 
+  let flavorSpyQueued = false;
   function scheduleFlavorSpy() {
     if (flavorSpyQueued) return;
     flavorSpyQueued = true;
