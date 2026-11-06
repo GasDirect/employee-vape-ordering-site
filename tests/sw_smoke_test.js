@@ -3,7 +3,7 @@ const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('ass
 const source=fs.readFileSync(path.join(__dirname,'../sw.js'),'utf8');
 const events={};
 const removed=[];
-const cacheEntries=['store-order-v4-2026-10-08-cachefix1','employee-vape-order-v0-2026-11-02','employee-vape-order-v1-2026-11-03','employee-vape-order-v2-2026-11-05','other-app-cache'];
+const cacheEntries=['store-order-v4-2026-10-08-cachefix1','employee-vape-order-v0-2026-11-02','employee-vape-order-v1-2026-11-03','employee-vape-order-v2-2026-11-05','employee-vape-order-v3-2026-11-05-flavors','other-app-cache'];
 const caches={
   keys:async()=>cacheEntries,
   delete:async key=>{removed.push(key);return true},
@@ -20,7 +20,7 @@ const ctx={
 vm.createContext(ctx);vm.runInContext(source,ctx);
 const activatePromises=[];events.activate({waitUntil:p=>activatePromises.push(p)});
 Promise.all(activatePromises).then(()=>{
-  assert.deepEqual(removed,['employee-vape-order-v0-2026-11-02','employee-vape-order-v1-2026-11-03']);
+  assert.deepEqual(removed,['employee-vape-order-v0-2026-11-02','employee-vape-order-v1-2026-11-03','employee-vape-order-v2-2026-11-05']);
   let responded=false;
   events.fetch({request:{method:'GET',url:'https://example.com/employee-ordering-site/index.html'},respondWith(){responded=true;}});
   assert.equal(responded,false);
